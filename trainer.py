@@ -21,7 +21,7 @@ def train():
         a = cv2.resize(a, dsize=(50, 50))
         c.append(a)
     
-    X_train, X_test, y_train, y_test = train_test_split(c, label, test_size=0.33, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(c, label)
 
     X_train = np.array(X_train)
     X_test = np.array(X_test)
@@ -125,9 +125,10 @@ def train():
     
     acc_v = sess.run(accuracy, feed_dict={X:X_test, Y:y_test, keep_prob: 1.0})
     # print(tf.argmax(a))
-    print(acc_v)
+    print("Accr :", acc_v)
 
     plt.plot(range(len(tmplst1)), tmplst1)
     plt.plot(range(len(tmplst2)), tmplst2, c ='r')
-    plt.ylim(3)
+    plt.ylim(0, 3)
     plt.show()
+    print(time.time() - start)
