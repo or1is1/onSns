@@ -1,5 +1,6 @@
 import os
 import preprocessing as pre
+import crawler as cr
 
 
 def preprocess():
@@ -23,4 +24,5 @@ def preprocess():
 	pre.voTTCSV2YOLOAnnoTxt(imgPath, csvFileList)
 	# pre.plotTrainBoxRatio() # 전체 이미지에서 학습 영역이 차지하는 비율을 구해서 그래프로 그림
 
-preprocess()
+# preprocess()
+cr.crawl("립스틱", "10", 0)
