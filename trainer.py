@@ -6,9 +6,9 @@ from sklearn.model_selection import train_test_split
 import time
 
 
-start = time.time()
-
 def train():
+    start = time.time()
+    print("train start!")
     path = 'img/_pre/'
     filenames = os.listdir(path)
     
@@ -47,8 +47,8 @@ def train():
     tf.reset_default_graph()
     tf.set_random_seed(777)  # reproducibility
 
-    learning_rate = 0.001
-    training_epochs = 55
+    learning_rate = 0.1
+    training_epochs = 5
     batch_size = 100
     keep_prob = tf.placeholder(tf.float32)
 
@@ -117,9 +117,10 @@ def train():
        
         tmplst1.append(c)
         tmplst2.append(loss_x)
-       
-        print('Epoch : ', epoch + 1, 'cost = ', '{:.9f}'.format(c))
-    print('Learning Finished!')
+        print('===== Epoch :', epoch + 1, ' =====')
+        print('train cost = ', '{:.9f}'.format(c))
+        print('test cost = ', '{:.9f}'.format(loss_x))
+    print('===== Learning Finished =====')
         
     
     acc_v = sess.run(accuracy, feed_dict={X:X_test, Y:y_test, keep_prob: 1.0})
@@ -128,4 +129,5 @@ def train():
 
     plt.plot(range(len(tmplst1)), tmplst1)
     plt.plot(range(len(tmplst2)), tmplst2, c ='r')
+    plt.ylim(3)
     plt.show()
