@@ -47,8 +47,8 @@ def train():
     tf.reset_default_graph()
     tf.set_random_seed(777)  # reproducibility
 
-    learning_rate = 0.01
-    training_epochs = 5
+    learning_rate = 0.001
+    training_epochs = 10
     batch_size = 100
     keep_prob = tf.placeholder(tf.float32)
 
@@ -126,9 +126,9 @@ def train():
     acc_v = sess.run(accuracy, feed_dict={X:X_test, Y:y_test, keep_prob: 1.0})
     # print(tf.argmax(a))
     print("Accr :", acc_v)
+    print("time :", time.time() - start)
 
     plt.plot(range(len(tmplst1)), tmplst1)
     plt.plot(range(len(tmplst2)), tmplst2, c ='r')
     plt.ylim(0, 3)
     plt.show()
-    print("time :", time.time() - start)
