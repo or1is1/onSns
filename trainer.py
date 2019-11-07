@@ -21,7 +21,7 @@ def train():
         a = cv2.resize(a, dsize=(50, 50))
         c.append(a)
     
-    X_train, X_test, y_train, y_test = train_test_split(c, label, test_size=0.33, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(c, label)
 
     X_train = np.array(X_train)
     X_test = np.array(X_test)
