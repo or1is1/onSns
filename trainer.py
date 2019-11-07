@@ -2,8 +2,12 @@ import os
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split
+import tensorflow as tf
 import time
+import random
+
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import OneHotEncoder
 
 
 def train():
@@ -27,8 +31,6 @@ def train():
     X_test = np.array(X_test)
     y_train = np.array(y_train)
     y_test = np.array(y_test)
-        
-    from sklearn.preprocessing import OneHotEncoder
 
     y_train=y_train.reshape([-1,1])
     enc=OneHotEncoder()
@@ -39,10 +41,6 @@ def train():
     enc=OneHotEncoder()
     enc.fit(y_test)
     y_test=enc.transform(y_test).toarray()
-    
-    import tensorflow as tf
-    import random
-    import matplotlib.pyplot as plt
 
     tf.reset_default_graph()
     tf.set_random_seed(777)  # reproducibility
@@ -118,8 +116,8 @@ def train():
         tmplst1.append(c)
         tmplst2.append(loss_x)
         print('===== Epoch :', epoch + 1, ' =====')
-        print('train cost = ', '{:.9f}'.format(c))
-        print('test cost = ', '{:.9f}'.format(loss_x))
+        print('train cost =', '{:.9f}'.format(c))
+        print('test cost =', '{:.9f}'.format(loss_x))
     print('===== Learning Finished =====')
         
     
