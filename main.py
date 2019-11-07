@@ -25,4 +25,4 @@ def preprocess():
 	# pre.plotTrainBoxRatio() # 전체 이미지에서 학습 영역이 차지하는 비율을 구해서 그래프로 그림
 
 # preprocess()
-cr.crawl("립스틱", "10", 0)
+cr.crawl("립스틱", "5", 0)
