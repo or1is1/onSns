@@ -3,3 +3,4 @@ chromedriver.exe
 out/
 img/
 *.pyc
+*.ipynb
