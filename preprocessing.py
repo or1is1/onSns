@@ -4,7 +4,7 @@ import cv2
 import os
 
 
-imgFormatList = ["jpg", "jpeg", "png", "gif"]
+imgFormatList = ["jpg", "jpeg", "png"]
 
 def getFilenameWoExt(Filename):
     return ".".join(Filename.split('.')[:-1])
@@ -170,25 +170,22 @@ def saveCroppedImg(dirPath, outPath):
         else:
             print("****************************************")
             print("*", filePath, "is None")
+            print(sr)
             print("****************************************")
 
         if i % 100 == 0 and i != 0:
             print("{} / {} = {}%".format(i, len(df), int(i / len(df) * 10000) / 100))
 
+    print()
+
 # TODO dirPath 로 통합시키기
-def voTTCSV2YOLOAnnoTxt(imgPath="./", outPath="./"):
-    fileList = os.listdir(imgPath)
-    csvList = []
+def voTTCSV2YOLOAnnoTxt(imgPath, csvFileList):
     outList = []
 
-    for file in fileList:
-        if file[-4:] == ".csv":
-            csvList.append(file)
-
-    for file in csvList:
+    for csvFile in csvFileList:
         prvImgName = None
 
-        with open(imgPath + file) as csvFileName:
+        with open(imgPath + csvFile) as csvFileName:
             lines = csvFileName.readlines()
             lines = lines[1:] # 컬럼 제거
 
@@ -201,7 +198,7 @@ def voTTCSV2YOLOAnnoTxt(imgPath="./", outPath="./"):
                 splitted[1:] = list(map(str, splitted[1:])) # int to str
 
                 if prvImgName != splitted[0]:
-                    splitted[1] = imgPath + file[:-4] + "/" + splitted[0].replace('"', '') # remove double quote
+                    splitted[1] = imgPath + csvFile[:-4] + "/" + splitted[0].replace('"', '') # remove double quote
                     splitted[1] = " ".join(splitted[1:3]) # concat
                     splitted[1] = ",".join(splitted[1:]) # concat
                     outList.append(splitted[1])
@@ -210,6 +207,6 @@ def voTTCSV2YOLOAnnoTxt(imgPath="./", outPath="./"):
 
                 prvImgName = splitted[0]
 
-    with open(outPath + "train.txt", 'w') as outfile:
+    with open("./train.txt", 'w') as outfile:
         for line in outList:
             outfile.write(line + '\n')

@@ -4,25 +4,23 @@ import preprocessing as pre
 
 def preprocess():
 	imgPath = "./img/"
-	dirPath = "./img/chanel/"
-	outPath = "./img/_pre/"
+	prePath = "./img/_pre/"
 	etcPath = "./img/_etc/"
 
-	pre.saveCroppedImg(dirPath, outPath)
-
 	fileList = os.listdir(imgPath)
-	folderList = []
+	csvFileList = []
 
 	for file in fileList:
-	        if pre.getExt(file) == "csv":
-	            folderList.append(file[:-4])
+		if pre.getExt(file) == "csv":
+			csvFileList.append(file)
 
-	for folderName in folderList:
-		if folderName == "drjart":
-			pre.optimizeFolder(dirPath, etcPath, 1)
-			break
-		pre.saveCroppedImg(folder, path, outPath)
-		# pre.voTTCSV2YOLOAnnoTxt()
-	pre.plotTrainBoxRatio() # 전체 이미지에서 학습 영역이 차지하는 비율을 구해서 그래프로 그림
+	for csvFile in csvFileList:
+		dirPath = imgPath + csvFile[:-4] + "/"
+		# pre.optimizeFolder(dirPath, etcPath, 1)
+		pre.csvFloat2Int(dirPath)
+		pre.saveCroppedImg(dirPath, prePath)
+
+	pre.voTTCSV2YOLOAnnoTxt(imgPath, csvFileList)
+	# pre.plotTrainBoxRatio() # 전체 이미지에서 학습 영역이 차지하는 비율을 구해서 그래프로 그림
 
 preprocess()

@@ -2,3 +2,4 @@
 chromedriver.exe
 out/
 img/
+*.pyc
