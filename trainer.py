@@ -125,9 +125,10 @@ def train():
     
     acc_v = sess.run(accuracy, feed_dict={X:X_test, Y:y_test, keep_prob: 1.0})
     # print(tf.argmax(a))
-    print(acc_v)
+    print("Accr :", acc_v)
 
     plt.plot(range(len(tmplst1)), tmplst1)
     plt.plot(range(len(tmplst2)), tmplst2, c ='r')
-    plt.ylim(3)
+    plt.ylim(0, 3)
     plt.show()
+    print("time :", time.time() - start)
