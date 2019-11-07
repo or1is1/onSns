@@ -178,7 +178,6 @@ def saveCroppedImg(dirPath, outPath):
 
     print()
 
-# TODO dirPath 로 통합시키기
 def voTTCSV2YOLOAnnoTxt(imgPath, csvFileList):
     outList = []
 
