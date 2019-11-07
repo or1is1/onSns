@@ -1,7 +1,7 @@
 import sys
 from PyQt5.QtWidgets import *
 from PyQt5 import QtCore, QtGui, QtWidgets
-import crawl
+import crawler
 
 
 class MyWindow(QMainWindow):
@@ -153,14 +153,12 @@ class MyWindow(QMainWindow):
 #
     def actionstart(self) : 
         if self.instavalue == 1 :
-            crawl.crawl(self.lineEdit.text(), 10, 0)
+            crawler.crawl(self.lineEdit.text(), 10, 0)
 #
 
 #
-if __name__ == "__main__":
+def run():
     app = QApplication(sys.argv)
     mywindow = MyWindow()
     mywindow.show()
     app.exec_()
-    
-#

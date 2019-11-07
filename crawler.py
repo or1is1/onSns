@@ -26,7 +26,6 @@ def crawl(keyword, count, site):
     site == 1 : 핀터
     site == 2 : 페북
     '''
-    
     save_dir = './out/{}/'.format(time.strftime('%y%m%d_%H%M%S', time.localtime(time.time())))
     img_dir = save_dir + 'img/'
     excel_dir = save_dir + 'excel/'

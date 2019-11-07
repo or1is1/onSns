@@ -1,7 +1,7 @@
 import os
 import preprocessing as pre
-import crawler as cr
 import trainer as tr
+import ui
 
 
 def preprocess():
@@ -27,4 +27,5 @@ def preprocess():
 
 # preprocess()
 # cr.crawl("립스틱", "5", 0)
-tr.train()
+# tr.train()
+ui.run()
