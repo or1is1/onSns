@@ -131,4 +131,4 @@ def train():
     plt.plot(range(len(tmplst2)), tmplst2, c ='r')
     plt.ylim(0, 3)
     plt.show()
-    print(time.time() - start)
+    print("time :", time.time() - start)
