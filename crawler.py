@@ -23,7 +23,8 @@ def crawl(keyword, count, site):
     keyword : 검색할 키워드
     count : 스크롤할 횟수
     site == 0 : 인스타
-    site == 1 : 페북(구현중)
+    site == 1 : 핀터
+    site == 2 : 페북
     '''
     
     save_dir = './out/{}/'.format(time.strftime('%y%m%d_%H%M%S', time.localtime(time.time())))
@@ -38,7 +39,7 @@ def crawl(keyword, count, site):
     # options.add_argument("--disable-gpu") # GPU 가속이 문제가 될 경우 해당 옵션 활성화 하여, GPU 가속 끄기
     # driver = webdriver.Chrome('chromedriver', chrome_options=options)
     driver = webdriver.Chrome('chromedriver')
-
+    
     if site == 0:
         baseUrl = 'https://www.instagram.com/explore/tags/'
         url = baseUrl + quote_plus(keyword)
@@ -178,7 +179,56 @@ def crawl(keyword, count, site):
         d = word_list.value_counts()
         d.to_excel(excel_dir + '{}_comment.xlsx'.format(keyword))
     elif site == 1:
-        pass
+        baseUrl = 'https://www.pinterest.co.kr/'
+        #ps=input('입력')
+        #count = input('스크롤할 횟수를 입력하세요 : ')
+        driver=webdriver.Chrome('chromedriver')
+        driver.get(baseUrl)
+
+        driver.find_element_by_id('email').send_keys('qweewq1111@naver.com')
+        driver.find_element_by_id('password').send_keys('zzzzzzzz11')
+        driver.find_element_by_id('age').send_keys('25')
+        driver.find_element_by_id('email').send_keys(Keys.RETURN)
+
+        time.sleep(3)
+        plusurl = 'search/pins/?q={0}&rs=typed&term_meta[]={0}%7Ctyped'.format(keyword)
+
+        url = baseUrl + (plusurl)
+        driver.get(url)
+
+
+        page = driver.page_source
+        soup = BeautifulSoup(page)
+        a2 = soup.find_all('div',"Yl- MIw Hb7")
+
+        elem = driver.find_element_by_tag_name("body")
+        imgurl = []
+
+        n=1
+        pagedowns=1
+
+        while pagedowns < int(count):
+            elem.send_keys(Keys.PAGE_DOWN)
+            time.sleep(1)
+            pagedowns += 1
+            page1 = driver.page_source
+            soup1 = BeautifulSoup(page1)
+            a2 = soup1.find_all('div',"Yl- MIw Hb7")
+            for i in range(0, len(a2)):
+                imgUrl = a2[i].select_one('.hCL.kVc.L4E.MIw').get('src')
+                imgurl.append(imgUrl)
+            imgurl = list(set(imgurl))
+        save_dir = './out/{}/'.format(time.strftime('%y%m%d_%H%M%S', time.localtime(time.time())))
+        img_dir = save_dir + 'img/'
+        n=1
+        for i in imgurl:
+            with urlopen(i) as f:
+                if not os.path.isdir(img_dir):
+                    os.makedirs(os.path.join(img_dir))
+                with open(img_dir + keyword + str(n) + '.jpg', 'wb') as h:
+                    img = f.read()
+                    h.write(img)
+                    n+=1
     else:
         raise
         
