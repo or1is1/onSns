@@ -4,8 +4,6 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 import crawl
 
 
-
-
 class MyWindow(QMainWindow):
     def __init__(self):
         super().__init__()

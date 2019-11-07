@@ -2,8 +2,12 @@ import os
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split
+import tensorflow as tf
 import time
+import random
+
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import OneHotEncoder
 
 
 def train():
@@ -27,8 +31,6 @@ def train():
     X_test = np.array(X_test)
     y_train = np.array(y_train)
     y_test = np.array(y_test)
-        
-    from sklearn.preprocessing import OneHotEncoder
 
     y_train=y_train.reshape([-1,1])
     enc=OneHotEncoder()
@@ -39,16 +41,12 @@ def train():
     enc=OneHotEncoder()
     enc.fit(y_test)
     y_test=enc.transform(y_test).toarray()
-    
-    import tensorflow as tf
-    import random
-    import matplotlib.pyplot as plt
 
     tf.reset_default_graph()
     tf.set_random_seed(777)  # reproducibility
 
-    learning_rate = 0.01
-    training_epochs = 5
+    learning_rate = 0.001
+    training_epochs = 10
     batch_size = 100
     keep_prob = tf.placeholder(tf.float32)
 
@@ -118,17 +116,17 @@ def train():
         tmplst1.append(c)
         tmplst2.append(loss_x)
         print('===== Epoch :', epoch + 1, ' =====')
-        print('train cost = ', '{:.9f}'.format(c))
-        print('test cost = ', '{:.9f}'.format(loss_x))
+        print('train cost =', '{:.9f}'.format(c))
+        print('test cost =', '{:.9f}'.format(loss_x))
     print('===== Learning Finished =====')
         
     
     acc_v = sess.run(accuracy, feed_dict={X:X_test, Y:y_test, keep_prob: 1.0})
     # print(tf.argmax(a))
     print("Accr :", acc_v)
+    print("time :", time.time() - start)
 
     plt.plot(range(len(tmplst1)), tmplst1)
     plt.plot(range(len(tmplst2)), tmplst2, c ='r')
     plt.ylim(0, 3)
     plt.show()
-    print("time :", time.time() - start)
