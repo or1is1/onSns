@@ -47,7 +47,7 @@ def train():
     tf.reset_default_graph()
     tf.set_random_seed(777)  # reproducibility
 
-    learning_rate = 0.1
+    learning_rate = 0.01
     training_epochs = 5
     batch_size = 100
     keep_prob = tf.placeholder(tf.float32)
