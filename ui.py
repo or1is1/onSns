@@ -153,7 +153,7 @@ class MyWindow(QMainWindow):
 #
     def actionstart(self) : 
         if self.instavalue == 1 :
-            crawler.crawl(self.lineEdit.text(), 10, 0)
+            crawler.crawl(self.lineEdit.text(), 5, 0)
 #
 
 #
