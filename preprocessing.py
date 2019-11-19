@@ -209,3 +209,30 @@ def voTTCSV2YOLOAnnoTxt(imgPath, csvFileList):
     with open("./train.txt", 'w') as outfile:
         for line in outList:
             outfile.write(line + '\n')
+
+import os
+import numpy as np
+import cv2
+import pandas as pd
+
+def define(path, imgCount):
+    img = os.listdir(path)
+    
+    c=[]
+    tmpClass = []
+    cls = []
+    
+    for i in range(len(img)):
+        tmpClass.append(int(img[i][0]))
+    
+    for i in range(10):
+        for j in range(tmpClass.index(i), tmpClass.index(i) + imgCount):
+            b= cv2.imread(path + '{}'.format(img[j]))
+            b = cv2.resize(b, dsize = (50, 50))
+            b = b / 255
+            c.append(b)
+            cls.append(i)
+    
+    img = pd.DataFrame(cls, columns = ['class'])
+    
+    return c, img
