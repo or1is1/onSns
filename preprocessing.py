@@ -141,7 +141,7 @@ def labelImgYOLO2VoTTCSV(dirPath, etcPath, label):
 def csvFloat2Int(dirPath):
     csvFileName = getCSVName(dirPath)
     df = pd.read_csv(csvFileName)
-    df[['xmin', 'ymin', 'xmax', 'ymax']] = df[['xmin', 'ymin', 'xmax', 'ymax']].astype('uint16')
+    df[['xmin', 'ymin', 'xmax', 'ymax', 'label']] = df[['xmin', 'ymin', 'xmax', 'ymax', 'label']].astype('uint16')
     df.to_csv(csvFileName, index = False)
 
 def saveCroppedImg(dirPath, outPath):

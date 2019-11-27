@@ -1,383 +1,383 @@
-./img/chanel/000011_1.jpg 11,11,158,97,5 6,99,192,134,5
-./img/chanel/0003238__100_coco_chanel_mademoiselle__600.png 345,345,354,369,5
-./img/chanel/00pp_chanel_timeless_jumbo_handbag_in_navy_blue_quilted_grained_leather.jpg 515,515,328,555,5
-./img/chanel/00_promo_chanel_billie.jpg 1178,1178,925,1297,5
-./img/chanel/0152663_1.jpg 534,534,447,632,5
-./img/chanel/04175456_zi.jpg 395,395,350,431,5
-./img/chanel/0454f28848c8a33562897f1397fb0e2b.jpg 443,443,369,462,5 396,315,504,347,5
-./img/chanel/091619_2CH.jpg 285,285,732,326,5
-./img/chanel/10_Facts_About_Chanel_Flap_Bag.jpg 849,849,2555,1422,5
-./img/chanel/11331871_xxl_v1559143544481.jpg 425,425,506,446,5
-./img/chanel/119189_img_8828_chanel_1957_720.jpg 357,357,445,398,5
-./img/chanel/1200px_Chanel_logo_interlocking_cs.svg.png 1,1,994,552,5 1,575,1200,768,5
-./img/chanel/1280px_Chanel_logo_no_words.svg.png 0,0,1280,938,5
-./img/chanel/1459_shop1_573788.jpg 410,410,384,438,5
-./img/chanel/15121814_1.jpg 371,371,349,425,5
-./img/chanel/1514213256726.jpg 418,418,323,462,5 868,453,920,506,5 502,175,582,202,5 653,109,728,141,5
-./img/chanel/1545265234_43.jpeg 178,178,2165,382,5 1088,2581,1476,2934,5
-./img/chanel/1546804573393010__Untitled_10A74FFB4A1D9C28B9A83BDEFA6FC28EA.jpg 323,323,484,363,5 762,680,906,718,5 1162,269,1319,305,5
-./img/chanel/1563881068457_b1a45e1308c5bf625316902837dcd2e647cd1d782faec50492c79e684d893a96.jpg 448,448,482,503,5 645,515,706,566,5
-./img/chanel/1563895984179_logo_GABRIELLE_CHANEL.png 207,207,996,378,5
-./img/chanel/1567103236_chanel_1567097893.jpg 1654,1654,1894,2750,5 1950,1673,3354,2761,5
-./img/chanel/156fd377_9954_4402_92e8_de55eb1a7be9.jpeg 435,435,562,468,5
-./img/chanel/19012101_1.jpg 367,367,366,421,5
-./img/chanel/19021107_1.jpg 196,196,306,412,5 344,208,612,428,5
-./img/chanel/19021112_1.jpg 244,244,292,435,5 350,223,601,433,5
-./img/chanel/19429.jpg 651,651,1610,890,5
-./img/chanel/197984c8_64e9_4724_9887_e15e3a5a7e3b.jpeg 705,705,557,785,5
-./img/chanel/19SS_Chanel_limited_WH_M_LIST_01.jpg 671,671,741,764,5
-./img/chanel/1b7c1215_a926_4ee7_8602_971c9030addb.jpeg 469,469,337,501,5 787,174,1045,232,5
-./img/chanel/2017101602010_0.jpg 41,41,579,430,5
-./img/chanel/20180821_BOY_DE_CHANEL_PR_min.jpg 539,539,317,597,5 470,646,507,678,5
-./img/chanel/2019_CKS_16993_0188_000(a_fall_winter_runway_black_lucite_crystal_rocket_ship_evening_bag_chan).jpg 458,458,444,535,5
-./img/chanel/2019_fashion_brand_cha_78el_summer_comfortable.jpg 258,258,513,457,5
-./img/chanel/21collier_chanel_or2.jpg 232,232,393,323,5
-./img/chanel/264R55IRYBHQTFLIPJZDB6PDBU.jpg 424,424,424,480,5
-./img/chanel/2745442.jpg 292,292,343,316,5
-./img/chanel/2_(1).png 50,50,147,105,5 23,151,198,188,5
-./img/chanel/2_(15).jpg 95,95,201,133,5
-./img/chanel/2_(16).jpg 112,112,91,166,5 113,57,187,113,5
-./img/chanel/2_(18).jpg 69,69,195,123,5
-./img/chanel/2_(3).png 54,54,167,135,5 27,135,198,171,5
-./img/chanel/2_(4).png 70,70,206,104,5 91,122,133,156,5
-./img/chanel/2_(5).png 55,55,164,133,5 28,136,196,168,5
-./img/chanel/2_(7).jpg 52,52,190,172,5
-./img/chanel/2_(8).png 53,53,217,94,5 79,121,127,161,5
-./img/chanel/2_(9).png 88,88,157,117,5 171,86,209,115,5
-./img/chanel/310ddc271bda7b39ee67f3bf11e08bdc_1553891704_47.jpg 120,120,188,157,5
-./img/chanel/3d2d018908c159e5bc21f5f52949c5cf.jpg 749,749,525,817,5 311,183,435,273,5
-./img/chanel/3_(1).jpg 168,168,105,186,5
-./img/chanel/3_(14).jpg 172,172,103,182,5
-./img/chanel/3_(16).jpg 187,187,174,208,5
-./img/chanel/3_(2).jpg 113,113,158,129,5
-./img/chanel/3_(24).jpg 189,189,160,207,5
-./img/chanel/3_(6).jpg 130,130,136,148,5
-./img/chanel/3_(7).jpg 0,0,103,22,5 36,163,74,174,5 106,173,124,191,5
-./img/chanel/3_(9).jpg 148,148,70,161,5
-./img/chanel/437_73004626_185300_M.jpg 1019,1019,659,1091,5
-./img/chanel/51a8b325_8f1e_417e_9326_5f2643faa858.jpeg 679,679,519,730,5
-./img/chanel/542104_flickr_chanel_ad.jpg 100,100,670,158,5
-./img/chanel/57a7fb4f1f8799cfae985ddfd888e856.jpg 898,898,765,1048,5
-./img/chanel/6bb5a59f_029f_4510_b9ab_7ca5f66e37ae.jpeg 278,278,590,364,5 1027,45,1088,95,5 1046,371,1149,451,5
-./img/chanel/6_(28).jpg 88,88,136,113,5
-./img/chanel/6_(29).jpg 84,84,129,103,5
-./img/chanel/6_(31).jpg 65,65,168,137,5
-./img/chanel/6_(33).jpg 134,134,122,151,5 17,12,45,36,5 3,45,59,57,5
-./img/chanel/6_(34).jpg 109,109,123,126,5
-./img/chanel/6_(37).jpg 78,78,122,96,5 80,7,126,23,5
-./img/chanel/71C10DNN3VL.jpg 1018,1018,772,1078,5
-./img/chanel/71DjaNHmwVL.jpg 1821,1821,1474,2031,5
-./img/chanel/74sac_timeless_chanel_mini.jpg 279,279,302,332,5
-./img/chanel/7realreal1.jpg 311,311,462,395,5
-./img/chanel/7_(1).jpg 104,104,145,115,5
-./img/chanel/7_(11).jpg 128,128,178,142,5 79,95,112,107,5
-./img/chanel/7_(12).jpg 134,134,134,146,5
-./img/chanel/7_(13).jpg 125,125,130,135,5
-./img/chanel/7_(14).jpg 97,97,93,109,5
-./img/chanel/7_(16).jpg 96,96,138,105,5
-./img/chanel/7_(17).jpg 146,146,100,158,5
-./img/chanel/7_(2).jpg 113,113,139,124,5
-./img/chanel/7_(20).jpg 195,195,157,214,5 88,131,122,138,5
-./img/chanel/7_(23).jpg 108,108,97,120,5
-./img/chanel/7_(24).jpg 129,129,120,139,5
-./img/chanel/7_(25).jpg 97,97,140,109,5
-./img/chanel/7_(26).jpg 131,131,136,142,5
-./img/chanel/7_(27).jpg 117,117,128,130,5
-./img/chanel/7_(30).jpg 151,151,127,163,5
-./img/chanel/7_(31).jpg 141,141,155,155,5 39,102,86,113,5
-./img/chanel/7_(32).jpg 118,118,131,126,5
-./img/chanel/7_(33).jpg 123,123,123,132,5
-./img/chanel/7_(34).jpg 86,86,105,101,5 150,125,192,134,5
-./img/chanel/7_(4).jpg 130,130,137,139,5
-./img/chanel/7_(7).jpg 148,148,82,156,5 149,166,178,174,5 30,31,195,63,5
-./img/chanel/7_(8).jpg 136,136,139,147,5
-./img/chanel/7_(9).jpg 142,142,139,154,5
-./img/chanel/8053672722178_shad_qt.png 208,208,722,257,5
-./img/chanel/8820119240734_blue_serum_catalyseur_skincare_chanel_2x.jpg 1523,1523,1110,1613,5
-./img/chanel/8821913354270_coco_mademoiselle_fragrance_chanel_2x.jpg 463,463,1420,502,5
-./img/chanel/8839482736670_skin_makeup_fnb_chanel_2x.jpg 1073,1073,551,1125,5 862,627,1006,671,5 1303,193,1439,229,5
-./img/chanel/8853174353950_chanel19_home_corpo_one_mobile_crop_456.jpg 720,720,902,927,5
-./img/chanel/8_(1).png 62,62,246,95,5
-./img/chanel/8_(100).jpg 176,176,92,192,5
-./img/chanel/8_(102).jpg 105,105,77,112,5 87,104,113,111,5 120,104,146,111,5
-./img/chanel/8_(109).jpg 155,155,94,167,5 163,122,184,133,5
-./img/chanel/8_(11).jpg 43,43,112,55,5 185,167,201,178,5
-./img/chanel/8_(117).jpg 173,173,117,191,5 156,2,221,19,5
-./img/chanel/8_(119).jpg 129,129,124,135,5
-./img/chanel/8_(122).jpg 20,20,171,38,5 103,150,129,164,5
-./img/chanel/8_(125).jpg 77,77,182,88,5 45,172,88,183,5
-./img/chanel/8_(127).jpg 111,111,189,123,5 150,174,200,185,5
-./img/chanel/8_(130).jpg 110,110,143,171,5
-./img/chanel/8_(131).jpg 124,124,95,154,5 140,121,173,148,5
-./img/chanel/8_(134).jpg 117,117,152,126,5
-./img/chanel/8_(139).jpg 168,168,104,177,5 129,162,166,174,5
-./img/chanel/8_(140).jpg 169,169,106,185,5
-./img/chanel/8_(15).jpg 133,133,47,149,5 141,124,163,140,5
-./img/chanel/8_(16).jpg 140,140,24,156,5 16,39,37,54,5 124,139,136,171,5
-./img/chanel/8_(17).jpg 123,123,83,132,5 90,124,117,131,5
-./img/chanel/8_(18).jpg 139,139,141,156,5
-./img/chanel/8_(2).jpg 165,165,82,171,5
-./img/chanel/8_(20).jpg 44,44,166,113,5
-./img/chanel/8_(23).jpg 168,168,159,183,5
-./img/chanel/8_(26).jpg 137,137,151,160,5
-./img/chanel/8_(28).jpg 132,132,145,150,5
-./img/chanel/8_(33).jpg 171,171,80,184,5 107,192,136,202,5
-./img/chanel/8_(35).jpg 117,117,92,132,5
-./img/chanel/8_(37).jpg 88,88,93,109,5 147,95,176,107,5 169,168,194,182,5
-./img/chanel/8_(38).jpg 138,138,158,149,5 48,146,75,163,5 83,133,107,146,5
-./img/chanel/8_(39).jpg 120,120,127,139,5
-./img/chanel/8_(42).jpg 90,90,103,103,5 130,120,166,130,5
-./img/chanel/8_(44).jpg 158,158,134,170,5
-./img/chanel/8_(51).jpg 139,139,73,157,5 133,90,185,108,5
-./img/chanel/8_(52).jpg 124,124,102,132,5 149,186,185,194,5 33,210,73,221,5
-./img/chanel/8_(58).jpg 117,117,137,129,5 131,24,187,55,5
-./img/chanel/8_(60).jpg 100,100,148,115,5 96,167,128,178,5
-./img/chanel/8_(62).jpg 27,27,73,70,5 145,147,160,167,5
-./img/chanel/8_(64).jpg 8,8,139,35,5 90,47,117,60,5
-./img/chanel/8_(67).jpg 130,130,132,138,5 60,7,124,23,5
-./img/chanel/8_(7).jpg 170,170,98,180,5 122,165,156,176,5 175,159,207,168,5 4,200,90,218,5
-./img/chanel/8_(70).jpg 3,3,37,24,5 1,25,43,36,5 30,176,41,188,5
-./img/chanel/8_(72).jpg 108,108,202,120,5 56,48,69,60,5
-./img/chanel/8_(8).jpg 117,117,146,144,5
-./img/chanel/8_(82).jpg 180,180,156,198,5
-./img/chanel/8_(84).jpg 7,7,126,23,5
-./img/chanel/8_(9).jpg 102,102,133,114,5 103,37,126,52,5
-./img/chanel/8_(91).jpg 207,207,121,217,5 92,143,111,155,5
-./img/chanel/8_(92).jpg 117,117,133,129,5 11,9,113,31,5
-./img/chanel/8_(95).jpg 119,119,149,132,5
-./img/chanel/8_(97).jpg 162,162,152,178,5
-./img/chanel/8_(99).jpg 186,186,140,199,5 107,141,139,149,5 168,193,182,205,5
-./img/chanel/90.png 566,566,399,601,5
-./img/chanel/9780500519813_std_chanel_the_karl_lagerfeld_campaigns.jpg 293,293,459,334,5
-./img/chanel/9781743790663.jpg 1854,1854,1552,2086,5
-./img/chanel/9958BE385A9B21E119.jpg 565,565,433,606,5
-./img/chanel/995FB533598F29F61A.png 283,283,438,305,5
-./img/chanel/99C536375D96FC380D.jpg 186,186,239,224,5 588,363,623,385,5
-./img/chanel/9a356f70_a01c_4cc2_89c3_1df07bbf94c6.jpeg 680,680,514,727,5
-./img/chanel/9k__(4).jpg 111,111,129,127,5
-./img/chanel/9k__(5).jpg 108,108,128,128,5
-./img/chanel/9k__(6).jpg 75,75,148,95,5
-./img/chanel/a30da9344a76947f367210d49be66a6d.jpg 389,389,407,426,5 16,763,642,867,5
-./img/chanel/aadc6f0a_4aad_4a22_a8aa_598307b0c850_vanity_case_beige_calfskin_gold_tone_metal_packshot_default_a57.jpg 1115,1115,1545,1312,5
-./img/chanel/a_metiers_dart_paris_cosmopolite_880.jpg 320,320,470,382,5
-./img/chanel/a_metiers_dart_paris_hamburg_black_gold_lucite.jpg 88,88,505,130,5
-./img/chanel/a_womans_ideal_wardrobe_according_to_coco_chanel_1601443_1450390106.700x0c.jpg 156,156,596,212,5
-./img/chanel/B0cq0jwCQAARnUe.jpg 80,80,408,108,5
-./img/chanel/b4fufjdd5zewine2cedn.jpg 304,304,397,329,5
-./img/chanel/batch_boydechanel_1.jpg 472,472,791,529,5
-./img/chanel/batch_boydechanel_4.jpg 254,254,926,409,5 1038,238,1279,426,5
-./img/chanel/batch_boydechanel_6.jpg 359,359,858,414,5
-./img/chanel/be500bc148a4ad6499316f0092e30990.jpg 157,157,443,402,5
-./img/chanel/Best_Luxury_Brands_Online_Chanel_Storytelling_Luxe_Digital.jpg 133,133,251,149,5 849,331,978,357,5
-./img/chanel/bolso_chanel_vintage_timeless_flap_bag_cadena_larga_oro.jpg 1109,1109,1071,1230,5
-./img/chanel/boydechanel_004_1024x469.jpg 217,217,395,238,5 307,339,400,364,5
-./img/chanel/boydechanel_008_1024x503.jpg 151,151,465,175,5 422,22,452,43,5
-./img/chanel/boy_chanel_handbag_black_calfskin_ruthenium_finish_metal_calfskin_ruthenium_finish_metal_packshot_de.jpg 3476,3476,2132,3757,5
-./img/chanel/boy_chanel_zipped_coin_purse_turquoise_lambskin_gold_tone_metal_lambskin_gold_tone_metal_packshot_de.jpg 2825,2825,2065,3043,5
-./img/chanel/brand01.jpg 124,124,382,172,5
-./img/chanel/bt_wk_31_chanel_backg.jpg 277,277,494,388,5
-./img/chanel/c5f41ebfc5344792897c6f1b03d3602e.jpg 20,20,557,97,5 174,336,228,388,5 625,367,657,449,5 375,659,457,697,5 460,363,574,461,5
-./img/chanel/c90ff62e_4693_4a2d_b868_262965b258ca.jpeg 128,128,433,348,5
-./img/chanel/ccbac1aeec9a9a459136ffcc484ce72c.jpg 456,456,312,498,5
-./img/chanel/cha5741102_1.jpg 597,597,666,663,5
-./img/chanel/Chanel.jpeg 2512,2512,2305,2954,5
-./img/chanel/chanel02.jpg 65,65,635,112,5
-./img/chanel/chanel2.jpg 23,23,508,273,5 12,283,630,393,5
-./img/chanel/Chanel5_20181127091609103.jpg 318,318,492,344,5 349,21,563,224,5
-./img/chanel/chanel_0001.png 46,46,200,178,5
-./img/chanel/chanel_0004.jpg 101,101,1021,238,5
-./img/chanel/chanel_0006.jpg 477,477,645,743,5
-./img/chanel/chanel_0008.jpg 1,1,538,292,5 0,300,623,400,5
-./img/chanel/chanel_0009.jpg 119,119,125,137,5
-./img/chanel/chanel_0010.jpg 392,392,642,502,5 227,80,570,331,5
-./img/chanel/chanel_0012.jpg 92,92,248,153,5 116,201,301,242,5
-./img/chanel/chanel_0013.jpg 196,196,202,220,5 282,3,368,23,5
-./img/chanel/chanel_0014.jpg 154,154,184,225,5 370,158,461,229,5
-./img/chanel/chanel_0016.jpg 129,129,594,249,5
-./img/chanel/chanel_0017.jpg 132,132,135,155,5 37,12,111,40,5
-./img/chanel/chanel_0019.jpg 380,380,742,523,5
-./img/chanel/chanel_0020.jpg 126,126,150,157,5 165,127,199,156,5 12,79,37,104,5
-./img/chanel/chanel_0021.jpg 68,68,639,113,5
-./img/chanel/chanel_0022.jpg 228,228,274,376,5 391,220,573,368,5
-./img/chanel/chanel_0023.jpg 409,409,452,490,5 425,193,557,265,5
-./img/chanel/chanel_0026.jpg 611,611,324,656,5
-./img/chanel/chanel_0028.jpg 690,690,542,782,5 395,910,615,960,5
-./img/chanel/chanel_0030.jpg 85,85,456,124,5
-./img/chanel/chanel_0032.png 188,188,477,263,5
-./img/chanel/chanel_0034.jpg 1164,1164,925,1296,5
-./img/chanel/chanel_0035.jpg 135,135,536,192,5 368,46,653,107,5
-./img/chanel/chanel_0036.jpg 401,401,461,474,5
-./img/chanel/chanel_0038.jpg 443,443,145,479,5 35,543,161,584,5
-./img/chanel/chanel_0039.jpg 529,529,328,595,5
-./img/chanel/chanel_0040.png 105,105,611,185,5 369,216,430,261,5
-./img/chanel/chanel_0041.png 256,256,478,348,5
-./img/chanel/chanel_0042.jpg 828,828,620,903,5
-./img/chanel/chanel_0043.jpg 360,360,555,447,5
-./img/chanel/chanel_0044.jpg 280,280,231,317,5
-./img/chanel/chanel_0045.jpg 231,231,313,256,5
-./img/chanel/chanel_0049.jpg 399,399,362,427,5
-./img/chanel/chanel_0052.jpg 58,58,123,96,5 97,202,130,213,5
-./img/chanel/chanel_0054.jpg 167,167,344,212,5 417,345,478,395,5 69,536,103,596,5 383,571,428,632,5
-./img/chanel/chanel_0055.jpg 203,203,136,231,5 366,357,422,404,5
-./img/chanel/chanel_0056.jpg 235,235,938,441,5 1033,230,1289,433,5
-./img/chanel/chanel_0057.jpg 323,323,203,357,5
-./img/chanel/chanel_0058.jpg 154,154,544,392,5 138,392,610,510,5
-./img/chanel/chanel_0059.jpg 148,148,117,252,5 196,326,224,347,5 290,371,325,391,5
-./img/chanel/chanel_0060.jpg 647,647,1616,945,5
-./img/chanel/chanel_0061.jpg 557,557,429,668,5 267,809,438,867,5
-./img/chanel/chanel_0062.jpg 231,231,203,361,5 231,88,365,227,5
-./img/chanel/chanel_0064.jpg 297,297,356,353,5
-./img/chanel/chanel_0065.png 145,145,585,196,5
-./img/chanel/chanel_0066.jpg 449,449,456,525,5
-./img/chanel/chanel_0067.jpg 266,266,304,306,5
-./img/chanel/chanel_0068.jpg 440,440,370,465,5 397,311,508,352,5
-./img/chanel/chanel_0069.jpg 183,183,510,234,5 226,178,290,235,5
-./img/chanel/chanel_0072.jpg 281,281,489,339,5 501,509,556,552,5
-./img/chanel/chanel_0073.jpeg 2529,2529,2299,2933,5
-./img/chanel/chanel_0076.jpg 84,84,439,371,5
-./img/chanel/chanel_0077.jpg 152,152,342,189,5
-./img/chanel/chanel_0078.jpg 308,308,90,335,5 204,310,225,338,5
-./img/chanel/chanel_0079.png 480,480,378,596,5 655,224,732,599,5
-./img/chanel/chanel_0082.jpg 307,307,316,337,5
-./img/chanel/chanel_0083.jpg 198,198,107,216,5
-./img/chanel/chanel_0085.jpg 20,20,822,56,5
-./img/chanel/chanel_0086.jpeg 246,246,482,356,5
-./img/chanel/chanel_0088.jpg 190,190,357,209,5 310,259,369,282,5 558,109,593,138,5 167,262,203,296,5
-./img/chanel/chanel_0089.jpg 272,272,290,327,5 263,132,355,181,5
-./img/chanel/chanel_0090.jpg 132,132,124,145,5
-./img/chanel/chanel_0093.jpg 118,118,279,158,5 38,118,211,153,5
-./img/chanel/chanel_0095.jpg 245,245,261,315,5
-./img/chanel/chanel_0096.jpg 493,493,942,615,5 1044,229,1144,290,5 596,198,648,247,5
-./img/chanel/chanel_0097.jpg 251,251,342,270,5
-./img/chanel/chanel_0098.png 424,424,772,447,5 201,440,277,460,5
-./img/chanel/chanel_0100.jpg 455,455,563,521,5 495,659,537,693,5 481,690,560,715,5
-./img/chanel/chanel_0101.jpg 85,85,430,370,5
-./img/chanel/chanel_0102.jpg 85,85,652,198,5
-./img/chanel/chanel_0104.jpg 49,49,359,65,5 184,92,210,157,5
-./img/chanel/chanel_0105.jpg 448,448,458,474,5 178,75,199,90,5
-./img/chanel/chanel_0106.jpg 35,35,633,136,5
-./img/chanel/chanel_0107.jpg 248,248,260,267,5
-./img/chanel/chanel_0111.jpeg 165,165,2158,381,5 1086,2560,1478,2926,5
-./img/chanel/chanel_0112.jpg 213,213,556,277,5
-./img/chanel/chanel_0114.jpg 286,286,1103,376,5 959,367,1139,407,5
-./img/chanel/chanel_0115.jpg 209,209,292,272,5
-./img/chanel/chanel_0116.jpeg 2230,2230,3002,3023,5 39,2204,878,2695,5 1551,1003,1882,1287,5
-./img/chanel/chanel_0117.jpg 431,431,530,483,5
-./img/chanel/chanel_0119.jpg 274,274,715,336,5 329,351,384,389,5
-./img/chanel/chanel_0120.jpg 478,478,572,512,5 543,173,581,199,5 280,128,320,159,5 213,342,249,361,5 327,538,377,562,5 43,460,115,492,5
-./img/chanel/chanel_0122.jpg 312,312,300,385,5 484,145,532,388,5
-./img/chanel/chanel_0123.jpg 172,172,500,240,5 389,237,524,264,5
-./img/chanel/chanel_0124.jpg 91,91,334,129,5
-./img/chanel/chanel_0125.jpg 429,429,459,463,5
-./img/chanel/chanel_0126.jpg 453,453,342,494,5
-./img/chanel/chanel_0365.jpg 302,302,279,344,5
-./img/chanel/chanel_0366.jpg 174,174,350,192,5
-./img/chanel/CHANEL_1.jpg 1054,1054,834,1171,5
-./img/chanel/chanel_19_maxi_flap_bag_white_goatskin_gold_tone_silver_tone_ruthenium_finish_metal_goatskin_gold_to.jpg 3126,3126,2205,3489,5
-./img/chanel/Chanel_5.png 142,142,581,199,5
-./img/chanel/CHANEL_A_1024x1024.jpg 81,81,815,195,5
-./img/chanel/chanel_banner.jpg 274,274,757,341,5 1472,400,1510,432,5
-./img/chanel/chanel_beaute_L.jpg 204,204,442,254,5
-./img/chanel/chanel_bianco_e_nero_quadro_moderno_arredamento_stampa_su_tela_cho14.jpg 82,82,471,310,5 72,311,562,407,5
-./img/chanel/chanel_ch3372_1026_50_19_black_medium.jpg 698,698,1051,770,5 1285,491,1318,531,5
-./img/chanel/chanel_ch3372_c1090_50_19_brown_medium.jpg 504,504,1266,535,5 841,701,1030,770,5
-./img/chanel/chanel_ch3373_c501_54_16_black_medium.jpg 657,657,1425,697,5
-./img/chanel/chanel_chance_1919.jpg 277,277,891,332,5
-./img/chanel/chanel_chance_eau_fraiche_big_size_edt_150_ml.jpg 506,506,539,544,5
-./img/chanel/Chanel_Chance_EdT_150ml.jpg 382,382,759,408,5 475,305,562,331,5
-./img/chanel/CHANEL_CH_3387_C501_51_18_27140_HD.jpg 172,172,879,268,5
-./img/chanel/CHANEL_CH_3388_1664_52_20_27155_HD.jpg 174,174,874,254,5
-./img/chanel/CHANEL_Classic_Medium_Flap_Bag_Black_1.jpg 1302,1302,664,1389,5 370,238,739,369,5
-./img/chanel/CHANEL_Coco_Mademoiselle_Intense_6.jpg 292,292,631,327,5
-./img/chanel/chanel_coco_mademoiselle_the_party_essentials.png 274,274,292,296,5 507,447,565,462,5 480,217,512,241,5
-./img/chanel/chanel_gabrielle_1930.jpg 406,406,363,453,5 206,205,264,219,5
-./img/chanel/Chanel_Gabrielle_mini_perfume_2504.jpg 619,619,310,641,5 589,451,765,490,5
-./img/chanel/chanel_girl_poster_1.jpg 531,531,829,673,5
-./img/chanel/chanel_j12_38mm_black_ceramic_diamond_dial_automatic_bracelet_watch_p11711_28981_image.png 423,423,546,449,5
-./img/chanel/Chanel_J12_Quartz_33mm_h4656.jpg 619,619,403,647,5
-./img/chanel/chanel_j12_untitled_38mm_white_ceramic_steel_bracelet_watch_p10838_25095_image.png 475,475,634,498,5
-./img/chanel/chanel_landing_2.jpg 573,573,615,617,5
-./img/chanel/chanel_landing_3.jpg 791,791,476,819,5
-./img/chanel/chanel_landing_4.jpg 595,595,638,645,5
-./img/chanel/Chanel_landing_page_image_desktop18.jpg 38,38,844,85,5
-./img/chanel/chanel_laregcat1_desktop_1150x650.jpg 127,127,480,149,5 175,470,196,582,5 740,572,874,601,5 991,57,1023,171,5
-./img/chanel/chanel_logos.jpg 126,126,301,287,5
-./img/chanel/chanel_logo_3_3d_model_obj_mtl_3ds_fbx_c4d_lwo_lw_lws_ma_mb.jpg 858,858,1412,1018,5
-./img/chanel/Chanel_Logo_Framed_Print_2000857_800x800.jpg 502,502,571,570,5 228,234,571,494,5
-./img/chanel/chanel_london_studio_090819.jpg 131,131,334,165,5
-./img/chanel/chanel_main.jpg 337,337,599,417,5
-./img/chanel/chanel_mens_fragrances_bleu_de_chanel_1919.jpg 214,214,333,249,5 440,416,501,454,5 45,272,94,314,5 471,130,518,160,5
-./img/chanel/Chanel_No._5_Fragrance_Austin_Calhoon_Photograph.jpg 384,384,367,414,5
-./img/chanel/chanel_noir_pink_print_only_.jpg 399,399,325,413,5
-./img/chanel/chanel_poster_2.jpg 21,21,800,1171,5
-./img/chanel/chanel_premiere_velours_18ct_yellow_gold_black_dial_rubber_strap_watch_p11714_28986_image.png 429,429,539,449,5
-./img/chanel/chanel_premiere_velours_18ct_yellow_gold_diamond_dial_ladies_watch_p11715_28987_image.png 429,429,540,452,5
-./img/chanel/CHANEL_SLIPCASE_2048x.jpg 127,127,1655,278,5
-./img/chanel/Chanel_Sneakers_Pharrell_White_Multi_Color_Product.jpg 380,380,846,468,5 857,520,922,568,5
-./img/chanel/chanel_ss1912.jpg 909,909,873,979,5
-./img/chanel/chanel_sun_1.jpg 154,154,728,223,5
-./img/chanel/Chanel_Transparent_Naked_PVC_See_Through_Beauty_Lock_Flap_Main_1200x1200.jpg 732,732,624,807,5 515,673,632,704,5
-./img/chanel/chanel_unisex_perfume_t.jpg 209,209,471,232,5 647,209,742,232,5 97,211,195,234,5
-./img/chanel/chanel_web03.jpg 668,668,812,717,5
-./img/chanel/chanel_web07_1.jpg 20,20,824,63,5
-./img/chanel/chanel_web12.jpg 9,9,492,52,5
-./img/chanel/chanel_web14.jpg 356,356,801,384,5
-./img/chanel/chanel_web15.jpg 490,490,744,518,5
-./img/chanel/chanel_winter_collection_2019_1929.jpg 343,343,105,367,5 24,440,65,483,5 347,235,375,288,5
-./img/chanel/CHANEL__EC_83_A4_EB_84_AC__EB_9E_A8_EC_8A_A4_ED_82_A8__EC_A0_90_EB_B3_B4__ED_81_B4_EB_9E_98_EC_8B_9D.jpg 239,239,495,469,5 303,471,392,509,5
-./img/chanel/cheap_perfumes_chanel_coco_mademoiselle_and_Aldi_feminine_eau_de_toilette.jpg 631,631,574,668,5
-./img/chanel/cheap_perfumes_chanel_no5_and_aldi_5th_Element_Eau_De_Toilette_920x581.jpg 293,293,286,317,5
-./img/chanel/ch_570678344194305_1.jpg 333,333,353,384,5
-./img/chanel/ch_570698344194305_5.jpg 331,331,327,382,5
-./img/chanel/coco_chanel_logo_suzanne_corbett.jpg 551,551,685,642,5 256,249,648,535,5
-./img/chanel/coco_chanel_paris_780x420.jpg 235,235,469,323,5
-./img/chanel/Coco_Chanel_Perfume_Bottle_b_5e410f31_ea8f_4e96_af37_916282e89e14_530x_2x.jpg 480,480,492,499,5
-./img/chanel/coco_mademoiselle_chanel_intense_campaign.jpg 344,344,532,368,5
-./img/chanel/coco_mademoiselle_eau_de_parfum_intense_spray_3_4fl_oz__packshot_default_116660_8820672266270.jpg 2142,2142,2193,2262,5
-./img/chanel/coveted_The_House_of_Chanel_photos.jpg 110,110,531,185,5
-./img/chanel/csm_Lempertz_1082_18_Hommage_a_Coco_The_CHANEL_Sale_Chanel_A_Chanel_Paris_No_5_facti_27816c39db.jpg 1085,1085,1506,1172,5
-./img/chanel/entete_1440x748_0.jpg 233,233,898,303,5
-./img/chanel/Gabrielle_EaudeParfum_HeyPretty.jpg 482,482,363,512,5
-./img/chanel/gettyimages_1144020487_e1560280652310.jpg 89,89,1917,295,5
-./img/chanel/https___blogs_images.forbes.com_tiffanyleigh_files_2018_08_MA2018_22_0117_1200x1597.jpg 983,983,557,1017,5
-./img/chanel/https___kr.hypebeast.com_files_2018_08_chanel_mens_beauty_2018.jpg 135,135,587,168,5
-./img/chanel/https___kr.hypebeast.com_files_2018_08_chanel_mens_beauty_2018_1.jpg 401,401,546,423,5 474,315,534,334,5 304,406,343,442,5
-./img/chanel/https___kr.hypebeast.com_files_2018_08_chanel_mens_beauty_2018_4.jpg 451,451,597,472,5 220,435,294,457,5 226,338,291,355,5
-./img/chanel/iconique_01.jpg 531,531,732,636,5
-./img/chanel/iconique_03.jpg 642,642,805,799,5
-./img/chanel/image.jpg 155,155,161,188,5 393,269,447,285,5
-./img/chanel/IMG_2227.jpg 786,786,591,893,5 815,232,929,332,5
-./img/chanel/KakaoTalk_20190128_144114989.jpg 291,291,494,336,5 497,509,555,550,5
-./img/chanel/kisspng_chanel_brand_prop_studios_fashion_logo_oc_transpo_5b1bdce427c4b2.9094729315285526761629.jpg 405,405,720,500,5 181,1,721,392,5
-./img/chanel/maxresdefault_(10).jpg 495,495,944,606,5
-./img/chanel/maxresdefault_(12).jpg 351,351,630,429,5
-./img/chanel/maxresdefault_(5).jpg 383,383,1148,624,5
-./img/chanel/maxresdefault_(6).jpg 235,235,599,259,5
-./img/chanel/maxresdefault_(8).jpg 314,314,874,409,5
-./img/chanel/methode_sundaytimes_prod_web_bin_e977e304_4320_11e8_a171_006f480ab6fd.jpg 113,113,374,145,5 134,268,201,312,5 597,141,649,195,5
-./img/chanel/NEWS0174_001.jpg 677,677,149,699,5 228,675,319,701,5 391,675,490,701,5 560,677,651,699,5 724,675,821,701,5 891,676,986,700,5
-./img/chanel/New_makeup_launches_for_September_Chanel_Laura_Mercier_NYX.jpg 653,653,399,712,5
-./img/chanel/N_TopBanner_Chanel_mobil_1D.jpg 135,135,348,187,5 505,246,590,264,5
-./img/chanel/oiwgzvptetmja0hvida6.jpg 338,338,345,351,5
-./img/chanel/pic_chanel.jpg 145,145,576,221,5
-./img/chanel/preview_chanel_2013_01_29.jpg 236,236,915,390,5 332,515,544,671,5
-./img/chanel/quadro_chanel_gocce_nere_stampa_su_tela_arredamento_arte_moderna_chv42.jpg 56,56,424,224,5
-./img/chanel/quadro_ispirato_a_chanel_occhi_quadro_moderno_stampe_su_tela_arte_moderna_arredamento_cho60.jpg 300,300,504,369,5 198,245,457,295,5
-./img/chanel/quadro_ispirato_a_chanel_rose_di_tempera_bianco_quadro_moderno_stampe_su_tela_arte_moderna_arredamen.jpg 157,157,427,216,5
-./img/chanel/quadro_ispirato_a_chanel_zoom_profumo_chanel_n5_quadro_moderno_stampe_su_tela_arte_moderna_arredamen.jpg 298,298,553,394,5 34,240,131,262,5
-./img/chanel/r_EN_ChanelAccessories_040219.jpg 991,991,510,1091,5
-./img/chanel/r_EN_ChanelBFTweed_040219.jpg 37,37,1162,124,5
-./img/chanel/r_EN_ChanelCamelia_021119.jpg 491,491,677,587,5
-./img/chanel/r_EN_ChanelCocoCrush_040219.jpg 1070,1070,1128,1142,5
-./img/chanel/r_EN_ChanelJ12_061719.jpg 359,359,733,456,5
-./img/chanel/s028_main.png 193,193,471,255,5
-./img/chanel/social.12345.jpg 293,293,672,324,5
-./img/chanel/style_59dc579603608_768x1024.jpg 429,429,461,463,5
-./img/chanel/style_5a391bdaa384e.jpg 172,172,844,218,5
-./img/chanel/Ut_HKthATH4eww8X4xMDoxOjBvMzuNSU.jpg 1493,1493,2034,1538,5
-./img/chanel/uzDEBSG0_cYRDkdtVrPPVffU4Po.jpg 191,191,356,208,5 564,112,589,135,5 311,262,368,278,5
-./img/chanel/u_3145891204001_01.jpg 490,490,685,526,5 285,529,436,569,5 87,535,232,566,5
-./img/chanel/Which_Chanel_5_Best.jpg 291,291,150,321,5 313,197,364,219,5
+./img/chanel/000011_1.jpg 11,11,158,97,0 6,99,192,134,0
+./img/chanel/0003238__100_coco_chanel_mademoiselle__600.png 345,345,354,369,0
+./img/chanel/00pp_chanel_timeless_jumbo_handbag_in_navy_blue_quilted_grained_leather.jpg 515,515,328,555,0
+./img/chanel/00_promo_chanel_billie.jpg 1178,1178,925,1297,0
+./img/chanel/0152663_1.jpg 534,534,447,632,0
+./img/chanel/04175456_zi.jpg 395,395,350,431,0
+./img/chanel/0454f28848c8a33562897f1397fb0e2b.jpg 443,443,369,462,0 396,315,504,347,0
+./img/chanel/091619_2CH.jpg 285,285,732,326,0
+./img/chanel/10_Facts_About_Chanel_Flap_Bag.jpg 849,849,2555,1422,0
+./img/chanel/11331871_xxl_v1559143544481.jpg 425,425,506,446,0
+./img/chanel/119189_img_8828_chanel_1957_720.jpg 357,357,445,398,0
+./img/chanel/1200px_Chanel_logo_interlocking_cs.svg.png 1,1,994,552,0 1,575,1200,768,0
+./img/chanel/1280px_Chanel_logo_no_words.svg.png 0,0,1280,938,0
+./img/chanel/1459_shop1_573788.jpg 410,410,384,438,0
+./img/chanel/15121814_1.jpg 371,371,349,425,0
+./img/chanel/1514213256726.jpg 418,418,323,462,0 868,453,920,506,0 502,175,582,202,0 653,109,728,141,0
+./img/chanel/1545265234_43.jpeg 178,178,2165,382,0 1088,2581,1476,2934,0
+./img/chanel/1546804573393010__Untitled_10A74FFB4A1D9C28B9A83BDEFA6FC28EA.jpg 323,323,484,363,0 762,680,906,718,0 1162,269,1319,305,0
+./img/chanel/1563881068457_b1a45e1308c5bf625316902837dcd2e647cd1d782faec50492c79e684d893a96.jpg 448,448,482,503,0 645,515,706,566,0
+./img/chanel/1563895984179_logo_GABRIELLE_CHANEL.png 207,207,996,378,0
+./img/chanel/1567103236_chanel_1567097893.jpg 1654,1654,1894,2750,0 1950,1673,3354,2761,0
+./img/chanel/156fd377_9954_4402_92e8_de55eb1a7be9.jpeg 435,435,562,468,0
+./img/chanel/19012101_1.jpg 367,367,366,421,0
+./img/chanel/19021107_1.jpg 196,196,306,412,0 344,208,612,428,0
+./img/chanel/19021112_1.jpg 244,244,292,435,0 350,223,601,433,0
+./img/chanel/19429.jpg 651,651,1610,890,0
+./img/chanel/197984c8_64e9_4724_9887_e15e3a5a7e3b.jpeg 705,705,557,785,0
+./img/chanel/19SS_Chanel_limited_WH_M_LIST_01.jpg 671,671,741,764,0
+./img/chanel/1b7c1215_a926_4ee7_8602_971c9030addb.jpeg 469,469,337,501,0 787,174,1045,232,0
+./img/chanel/2017101602010_0.jpg 41,41,579,430,0
+./img/chanel/20180821_BOY_DE_CHANEL_PR_min.jpg 539,539,317,597,0 470,646,507,678,0
+./img/chanel/2019_CKS_16993_0188_000(a_fall_winter_runway_black_lucite_crystal_rocket_ship_evening_bag_chan).jpg 458,458,444,535,0
+./img/chanel/2019_fashion_brand_cha_78el_summer_comfortable.jpg 258,258,513,457,0
+./img/chanel/21collier_chanel_or2.jpg 232,232,393,323,0
+./img/chanel/264R55IRYBHQTFLIPJZDB6PDBU.jpg 424,424,424,480,0
+./img/chanel/2745442.jpg 292,292,343,316,0
+./img/chanel/2_(1).png 50,50,147,105,0 23,151,198,188,0
+./img/chanel/2_(15).jpg 95,95,201,133,0
+./img/chanel/2_(16).jpg 112,112,91,166,0 113,57,187,113,0
+./img/chanel/2_(18).jpg 69,69,195,123,0
+./img/chanel/2_(3).png 54,54,167,135,0 27,135,198,171,0
+./img/chanel/2_(4).png 70,70,206,104,0 91,122,133,156,0
+./img/chanel/2_(5).png 55,55,164,133,0 28,136,196,168,0
+./img/chanel/2_(7).jpg 52,52,190,172,0
+./img/chanel/2_(8).png 53,53,217,94,0 79,121,127,161,0
+./img/chanel/2_(9).png 88,88,157,117,0 171,86,209,115,0
+./img/chanel/310ddc271bda7b39ee67f3bf11e08bdc_1553891704_47.jpg 120,120,188,157,0
+./img/chanel/3d2d018908c159e5bc21f5f52949c5cf.jpg 749,749,525,817,0 311,183,435,273,0
+./img/chanel/3_(1).jpg 168,168,105,186,0
+./img/chanel/3_(14).jpg 172,172,103,182,0
+./img/chanel/3_(16).jpg 187,187,174,208,0
+./img/chanel/3_(2).jpg 113,113,158,129,0
+./img/chanel/3_(24).jpg 189,189,160,207,0
+./img/chanel/3_(6).jpg 130,130,136,148,0
+./img/chanel/3_(7).jpg 0,0,103,22,0 36,163,74,174,0 106,173,124,191,0
+./img/chanel/3_(9).jpg 148,148,70,161,0
+./img/chanel/437_73004626_185300_M.jpg 1019,1019,659,1091,0
+./img/chanel/51a8b325_8f1e_417e_9326_5f2643faa858.jpeg 679,679,519,730,0
+./img/chanel/542104_flickr_chanel_ad.jpg 100,100,670,158,0
+./img/chanel/57a7fb4f1f8799cfae985ddfd888e856.jpg 898,898,765,1048,0
+./img/chanel/6bb5a59f_029f_4510_b9ab_7ca5f66e37ae.jpeg 278,278,590,364,0 1027,45,1088,95,0 1046,371,1149,451,0
+./img/chanel/6_(28).jpg 88,88,136,113,0
+./img/chanel/6_(29).jpg 84,84,129,103,0
+./img/chanel/6_(31).jpg 65,65,168,137,0
+./img/chanel/6_(33).jpg 134,134,122,151,0 17,12,45,36,0 3,45,59,57,0
+./img/chanel/6_(34).jpg 109,109,123,126,0
+./img/chanel/6_(37).jpg 78,78,122,96,0 80,7,126,23,0
+./img/chanel/71C10DNN3VL.jpg 1018,1018,772,1078,0
+./img/chanel/71DjaNHmwVL.jpg 1821,1821,1474,2031,0
+./img/chanel/74sac_timeless_chanel_mini.jpg 279,279,302,332,0
+./img/chanel/7realreal1.jpg 311,311,462,395,0
+./img/chanel/7_(1).jpg 104,104,145,115,0
+./img/chanel/7_(11).jpg 128,128,178,142,0 79,95,112,107,0
+./img/chanel/7_(12).jpg 134,134,134,146,0
+./img/chanel/7_(13).jpg 125,125,130,135,0
+./img/chanel/7_(14).jpg 97,97,93,109,0
+./img/chanel/7_(16).jpg 96,96,138,105,0
+./img/chanel/7_(17).jpg 146,146,100,158,0
+./img/chanel/7_(2).jpg 113,113,139,124,0
+./img/chanel/7_(20).jpg 195,195,157,214,0 88,131,122,138,0
+./img/chanel/7_(23).jpg 108,108,97,120,0
+./img/chanel/7_(24).jpg 129,129,120,139,0
+./img/chanel/7_(25).jpg 97,97,140,109,0
+./img/chanel/7_(26).jpg 131,131,136,142,0
+./img/chanel/7_(27).jpg 117,117,128,130,0
+./img/chanel/7_(30).jpg 151,151,127,163,0
+./img/chanel/7_(31).jpg 141,141,155,155,0 39,102,86,113,0
+./img/chanel/7_(32).jpg 118,118,131,126,0
+./img/chanel/7_(33).jpg 123,123,123,132,0
+./img/chanel/7_(34).jpg 86,86,105,101,0 150,125,192,134,0
+./img/chanel/7_(4).jpg 130,130,137,139,0
+./img/chanel/7_(7).jpg 148,148,82,156,0 149,166,178,174,0 30,31,195,63,0
+./img/chanel/7_(8).jpg 136,136,139,147,0
+./img/chanel/7_(9).jpg 142,142,139,154,0
+./img/chanel/8053672722178_shad_qt.png 208,208,722,257,0
+./img/chanel/8820119240734_blue_serum_catalyseur_skincare_chanel_2x.jpg 1523,1523,1110,1613,0
+./img/chanel/8821913354270_coco_mademoiselle_fragrance_chanel_2x.jpg 463,463,1420,502,0
+./img/chanel/8839482736670_skin_makeup_fnb_chanel_2x.jpg 1073,1073,551,1125,0 862,627,1006,671,0 1303,193,1439,229,0
+./img/chanel/8853174353950_chanel19_home_corpo_one_mobile_crop_456.jpg 720,720,902,927,0
+./img/chanel/8_(1).png 62,62,246,95,0
+./img/chanel/8_(100).jpg 176,176,92,192,0
+./img/chanel/8_(102).jpg 105,105,77,112,0 87,104,113,111,0 120,104,146,111,0
+./img/chanel/8_(109).jpg 155,155,94,167,0 163,122,184,133,0
+./img/chanel/8_(11).jpg 43,43,112,55,0 185,167,201,178,0
+./img/chanel/8_(117).jpg 173,173,117,191,0 156,2,221,19,0
+./img/chanel/8_(119).jpg 129,129,124,135,0
+./img/chanel/8_(122).jpg 20,20,171,38,0 103,150,129,164,0
+./img/chanel/8_(125).jpg 77,77,182,88,0 45,172,88,183,0
+./img/chanel/8_(127).jpg 111,111,189,123,0 150,174,200,185,0
+./img/chanel/8_(130).jpg 110,110,143,171,0
+./img/chanel/8_(131).jpg 124,124,95,154,0 140,121,173,148,0
+./img/chanel/8_(134).jpg 117,117,152,126,0
+./img/chanel/8_(139).jpg 168,168,104,177,0 129,162,166,174,0
+./img/chanel/8_(140).jpg 169,169,106,185,0
+./img/chanel/8_(15).jpg 133,133,47,149,0 141,124,163,140,0
+./img/chanel/8_(16).jpg 140,140,24,156,0 16,39,37,54,0 124,139,136,171,0
+./img/chanel/8_(17).jpg 123,123,83,132,0 90,124,117,131,0
+./img/chanel/8_(18).jpg 139,139,141,156,0
+./img/chanel/8_(2).jpg 165,165,82,171,0
+./img/chanel/8_(20).jpg 44,44,166,113,0
+./img/chanel/8_(23).jpg 168,168,159,183,0
+./img/chanel/8_(26).jpg 137,137,151,160,0
+./img/chanel/8_(28).jpg 132,132,145,150,0
+./img/chanel/8_(33).jpg 171,171,80,184,0 107,192,136,202,0
+./img/chanel/8_(35).jpg 117,117,92,132,0
+./img/chanel/8_(37).jpg 88,88,93,109,0 147,95,176,107,0 169,168,194,182,0
+./img/chanel/8_(38).jpg 138,138,158,149,0 48,146,75,163,0 83,133,107,146,0
+./img/chanel/8_(39).jpg 120,120,127,139,0
+./img/chanel/8_(42).jpg 90,90,103,103,0 130,120,166,130,0
+./img/chanel/8_(44).jpg 158,158,134,170,0
+./img/chanel/8_(51).jpg 139,139,73,157,0 133,90,185,108,0
+./img/chanel/8_(52).jpg 124,124,102,132,0 149,186,185,194,0 33,210,73,221,0
+./img/chanel/8_(58).jpg 117,117,137,129,0 131,24,187,55,0
+./img/chanel/8_(60).jpg 100,100,148,115,0 96,167,128,178,0
+./img/chanel/8_(62).jpg 27,27,73,70,0 145,147,160,167,0
+./img/chanel/8_(64).jpg 8,8,139,35,0 90,47,117,60,0
+./img/chanel/8_(67).jpg 130,130,132,138,0 60,7,124,23,0
+./img/chanel/8_(7).jpg 170,170,98,180,0 122,165,156,176,0 175,159,207,168,0 4,200,90,218,0
+./img/chanel/8_(70).jpg 3,3,37,24,0 1,25,43,36,0 30,176,41,188,0
+./img/chanel/8_(72).jpg 108,108,202,120,0 56,48,69,60,0
+./img/chanel/8_(8).jpg 117,117,146,144,0
+./img/chanel/8_(82).jpg 180,180,156,198,0
+./img/chanel/8_(84).jpg 7,7,126,23,0
+./img/chanel/8_(9).jpg 102,102,133,114,0 103,37,126,52,0
+./img/chanel/8_(91).jpg 207,207,121,217,0 92,143,111,155,0
+./img/chanel/8_(92).jpg 117,117,133,129,0 11,9,113,31,0
+./img/chanel/8_(95).jpg 119,119,149,132,0
+./img/chanel/8_(97).jpg 162,162,152,178,0
+./img/chanel/8_(99).jpg 186,186,140,199,0 107,141,139,149,0 168,193,182,205,0
+./img/chanel/90.png 566,566,399,601,0
+./img/chanel/9780500519813_std_chanel_the_karl_lagerfeld_campaigns.jpg 293,293,459,334,0
+./img/chanel/9781743790663.jpg 1854,1854,1552,2086,0
+./img/chanel/9958BE385A9B21E119.jpg 565,565,433,606,0
+./img/chanel/995FB533598F29F61A.png 283,283,438,305,0
+./img/chanel/99C536375D96FC380D.jpg 186,186,239,224,0 588,363,623,385,0
+./img/chanel/9a356f70_a01c_4cc2_89c3_1df07bbf94c6.jpeg 680,680,514,727,0
+./img/chanel/9k__(4).jpg 111,111,129,127,0
+./img/chanel/9k__(5).jpg 108,108,128,128,0
+./img/chanel/9k__(6).jpg 75,75,148,95,0
+./img/chanel/a30da9344a76947f367210d49be66a6d.jpg 389,389,407,426,0 16,763,642,867,0
+./img/chanel/aadc6f0a_4aad_4a22_a8aa_598307b0c850_vanity_case_beige_calfskin_gold_tone_metal_packshot_default_a57.jpg 1115,1115,1545,1312,0
+./img/chanel/a_metiers_dart_paris_cosmopolite_880.jpg 320,320,470,382,0
+./img/chanel/a_metiers_dart_paris_hamburg_black_gold_lucite.jpg 88,88,505,130,0
+./img/chanel/a_womans_ideal_wardrobe_according_to_coco_chanel_1601443_1450390106.700x0c.jpg 156,156,596,212,0
+./img/chanel/B0cq0jwCQAARnUe.jpg 80,80,408,108,0
+./img/chanel/b4fufjdd5zewine2cedn.jpg 304,304,397,329,0
+./img/chanel/batch_boydechanel_1.jpg 472,472,791,529,0
+./img/chanel/batch_boydechanel_4.jpg 254,254,926,409,0 1038,238,1279,426,0
+./img/chanel/batch_boydechanel_6.jpg 359,359,858,414,0
+./img/chanel/be500bc148a4ad6499316f0092e30990.jpg 157,157,443,402,0
+./img/chanel/Best_Luxury_Brands_Online_Chanel_Storytelling_Luxe_Digital.jpg 133,133,251,149,0 849,331,978,357,0
+./img/chanel/bolso_chanel_vintage_timeless_flap_bag_cadena_larga_oro.jpg 1109,1109,1071,1230,0
+./img/chanel/boydechanel_004_1024x469.jpg 217,217,395,238,0 307,339,400,364,0
+./img/chanel/boydechanel_008_1024x503.jpg 151,151,465,175,0 422,22,452,43,0
+./img/chanel/boy_chanel_handbag_black_calfskin_ruthenium_finish_metal_calfskin_ruthenium_finish_metal_packshot_de.jpg 3476,3476,2132,3757,0
+./img/chanel/boy_chanel_zipped_coin_purse_turquoise_lambskin_gold_tone_metal_lambskin_gold_tone_metal_packshot_de.jpg 2825,2825,2065,3043,0
+./img/chanel/brand01.jpg 124,124,382,172,0
+./img/chanel/bt_wk_31_chanel_backg.jpg 277,277,494,388,0
+./img/chanel/c5f41ebfc5344792897c6f1b03d3602e.jpg 20,20,557,97,0 174,336,228,388,0 625,367,657,449,0 375,659,457,697,0 460,363,574,461,0
+./img/chanel/c90ff62e_4693_4a2d_b868_262965b258ca.jpeg 128,128,433,348,0
+./img/chanel/ccbac1aeec9a9a459136ffcc484ce72c.jpg 456,456,312,498,0
+./img/chanel/cha5741102_1.jpg 597,597,666,663,0
+./img/chanel/Chanel.jpeg 2512,2512,2305,2954,0
+./img/chanel/chanel02.jpg 65,65,635,112,0
+./img/chanel/chanel2.jpg 23,23,508,273,0 12,283,630,393,0
+./img/chanel/Chanel5_20181127091609103.jpg 318,318,492,344,0 349,21,563,224,0
+./img/chanel/chanel_0001.png 46,46,200,178,0
+./img/chanel/chanel_0004.jpg 101,101,1021,238,0
+./img/chanel/chanel_0006.jpg 477,477,645,743,0
+./img/chanel/chanel_0008.jpg 1,1,538,292,0 0,300,623,400,0
+./img/chanel/chanel_0009.jpg 119,119,125,137,0
+./img/chanel/chanel_0010.jpg 392,392,642,502,0 227,80,570,331,0
+./img/chanel/chanel_0012.jpg 92,92,248,153,0 116,201,301,242,0
+./img/chanel/chanel_0013.jpg 196,196,202,220,0 282,3,368,23,0
+./img/chanel/chanel_0014.jpg 154,154,184,225,0 370,158,461,229,0
+./img/chanel/chanel_0016.jpg 129,129,594,249,0
+./img/chanel/chanel_0017.jpg 132,132,135,155,0 37,12,111,40,0
+./img/chanel/chanel_0019.jpg 380,380,742,523,0
+./img/chanel/chanel_0020.jpg 126,126,150,157,0 165,127,199,156,0 12,79,37,104,0
+./img/chanel/chanel_0021.jpg 68,68,639,113,0
+./img/chanel/chanel_0022.jpg 228,228,274,376,0 391,220,573,368,0
+./img/chanel/chanel_0023.jpg 409,409,452,490,0 425,193,557,265,0
+./img/chanel/chanel_0026.jpg 611,611,324,656,0
+./img/chanel/chanel_0028.jpg 690,690,542,782,0 395,910,615,960,0
+./img/chanel/chanel_0030.jpg 85,85,456,124,0
+./img/chanel/chanel_0032.png 188,188,477,263,0
+./img/chanel/chanel_0034.jpg 1164,1164,925,1296,0
+./img/chanel/chanel_0035.jpg 135,135,536,192,0 368,46,653,107,0
+./img/chanel/chanel_0036.jpg 401,401,461,474,0
+./img/chanel/chanel_0038.jpg 443,443,145,479,0 35,543,161,584,0
+./img/chanel/chanel_0039.jpg 529,529,328,595,0
+./img/chanel/chanel_0040.png 105,105,611,185,0 369,216,430,261,0
+./img/chanel/chanel_0041.png 256,256,478,348,0
+./img/chanel/chanel_0042.jpg 828,828,620,903,0
+./img/chanel/chanel_0043.jpg 360,360,555,447,0
+./img/chanel/chanel_0044.jpg 280,280,231,317,0
+./img/chanel/chanel_0045.jpg 231,231,313,256,0
+./img/chanel/chanel_0049.jpg 399,399,362,427,0
+./img/chanel/chanel_0052.jpg 58,58,123,96,0 97,202,130,213,0
+./img/chanel/chanel_0054.jpg 167,167,344,212,0 417,345,478,395,0 69,536,103,596,0 383,571,428,632,0
+./img/chanel/chanel_0055.jpg 203,203,136,231,0 366,357,422,404,0
+./img/chanel/chanel_0056.jpg 235,235,938,441,0 1033,230,1289,433,0
+./img/chanel/chanel_0057.jpg 323,323,203,357,0
+./img/chanel/chanel_0058.jpg 154,154,544,392,0 138,392,610,510,0
+./img/chanel/chanel_0059.jpg 148,148,117,252,0 196,326,224,347,0 290,371,325,391,0
+./img/chanel/chanel_0060.jpg 647,647,1616,945,0
+./img/chanel/chanel_0061.jpg 557,557,429,668,0 267,809,438,867,0
+./img/chanel/chanel_0062.jpg 231,231,203,361,0 231,88,365,227,0
+./img/chanel/chanel_0064.jpg 297,297,356,353,0
+./img/chanel/chanel_0065.png 145,145,585,196,0
+./img/chanel/chanel_0066.jpg 449,449,456,525,0
+./img/chanel/chanel_0067.jpg 266,266,304,306,0
+./img/chanel/chanel_0068.jpg 440,440,370,465,0 397,311,508,352,0
+./img/chanel/chanel_0069.jpg 183,183,510,234,0 226,178,290,235,0
+./img/chanel/chanel_0072.jpg 281,281,489,339,0 501,509,556,552,0
+./img/chanel/chanel_0073.jpeg 2529,2529,2299,2933,0
+./img/chanel/chanel_0076.jpg 84,84,439,371,0
+./img/chanel/chanel_0077.jpg 152,152,342,189,0
+./img/chanel/chanel_0078.jpg 308,308,90,335,0 204,310,225,338,0
+./img/chanel/chanel_0079.png 480,480,378,596,0 655,224,732,599,0
+./img/chanel/chanel_0082.jpg 307,307,316,337,0
+./img/chanel/chanel_0083.jpg 198,198,107,216,0
+./img/chanel/chanel_0085.jpg 20,20,822,56,0
+./img/chanel/chanel_0086.jpeg 246,246,482,356,0
+./img/chanel/chanel_0088.jpg 190,190,357,209,0 310,259,369,282,0 558,109,593,138,0 167,262,203,296,0
+./img/chanel/chanel_0089.jpg 272,272,290,327,0 263,132,355,181,0
+./img/chanel/chanel_0090.jpg 132,132,124,145,0
+./img/chanel/chanel_0093.jpg 118,118,279,158,0 38,118,211,153,0
+./img/chanel/chanel_0095.jpg 245,245,261,315,0
+./img/chanel/chanel_0096.jpg 493,493,942,615,0 1044,229,1144,290,0 596,198,648,247,0
+./img/chanel/chanel_0097.jpg 251,251,342,270,0
+./img/chanel/chanel_0098.png 424,424,772,447,0 201,440,277,460,0
+./img/chanel/chanel_0100.jpg 455,455,563,521,0 495,659,537,693,0 481,690,560,715,0
+./img/chanel/chanel_0101.jpg 85,85,430,370,0
+./img/chanel/chanel_0102.jpg 85,85,652,198,0
+./img/chanel/chanel_0104.jpg 49,49,359,65,0 184,92,210,157,0
+./img/chanel/chanel_0105.jpg 448,448,458,474,0 178,75,199,90,0
+./img/chanel/chanel_0106.jpg 35,35,633,136,0
+./img/chanel/chanel_0107.jpg 248,248,260,267,0
+./img/chanel/chanel_0111.jpeg 165,165,2158,381,0 1086,2560,1478,2926,0
+./img/chanel/chanel_0112.jpg 213,213,556,277,0
+./img/chanel/chanel_0114.jpg 286,286,1103,376,0 959,367,1139,407,0
+./img/chanel/chanel_0115.jpg 209,209,292,272,0
+./img/chanel/chanel_0116.jpeg 2230,2230,3002,3023,0 39,2204,878,2695,0 1551,1003,1882,1287,0
+./img/chanel/chanel_0117.jpg 431,431,530,483,0
+./img/chanel/chanel_0119.jpg 274,274,715,336,0 329,351,384,389,0
+./img/chanel/chanel_0120.jpg 478,478,572,512,0 543,173,581,199,0 280,128,320,159,0 213,342,249,361,0 327,538,377,562,0 43,460,115,492,0
+./img/chanel/chanel_0122.jpg 312,312,300,385,0 484,145,532,388,0
+./img/chanel/chanel_0123.jpg 172,172,500,240,0 389,237,524,264,0
+./img/chanel/chanel_0124.jpg 91,91,334,129,0
+./img/chanel/chanel_0125.jpg 429,429,459,463,0
+./img/chanel/chanel_0126.jpg 453,453,342,494,0
+./img/chanel/chanel_0365.jpg 302,302,279,344,0
+./img/chanel/chanel_0366.jpg 174,174,350,192,0
+./img/chanel/CHANEL_1.jpg 1054,1054,834,1171,0
+./img/chanel/chanel_19_maxi_flap_bag_white_goatskin_gold_tone_silver_tone_ruthenium_finish_metal_goatskin_gold_to.jpg 3126,3126,2205,3489,0
+./img/chanel/Chanel_5.png 142,142,581,199,0
+./img/chanel/CHANEL_A_1024x1024.jpg 81,81,815,195,0
+./img/chanel/chanel_banner.jpg 274,274,757,341,0 1472,400,1510,432,0
+./img/chanel/chanel_beaute_L.jpg 204,204,442,254,0
+./img/chanel/chanel_bianco_e_nero_quadro_moderno_arredamento_stampa_su_tela_cho14.jpg 82,82,471,310,0 72,311,562,407,0
+./img/chanel/chanel_ch3372_1026_50_19_black_medium.jpg 698,698,1051,770,0 1285,491,1318,531,0
+./img/chanel/chanel_ch3372_c1090_50_19_brown_medium.jpg 504,504,1266,535,0 841,701,1030,770,0
+./img/chanel/chanel_ch3373_c501_54_16_black_medium.jpg 657,657,1425,697,0
+./img/chanel/chanel_chance_1919.jpg 277,277,891,332,0
+./img/chanel/chanel_chance_eau_fraiche_big_size_edt_150_ml.jpg 506,506,539,544,0
+./img/chanel/Chanel_Chance_EdT_150ml.jpg 382,382,759,408,0 475,305,562,331,0
+./img/chanel/CHANEL_CH_3387_C501_51_18_27140_HD.jpg 172,172,879,268,0
+./img/chanel/CHANEL_CH_3388_1664_52_20_27155_HD.jpg 174,174,874,254,0
+./img/chanel/CHANEL_Classic_Medium_Flap_Bag_Black_1.jpg 1302,1302,664,1389,0 370,238,739,369,0
+./img/chanel/CHANEL_Coco_Mademoiselle_Intense_6.jpg 292,292,631,327,0
+./img/chanel/chanel_coco_mademoiselle_the_party_essentials.png 274,274,292,296,0 507,447,565,462,0 480,217,512,241,0
+./img/chanel/chanel_gabrielle_1930.jpg 406,406,363,453,0 206,205,264,219,0
+./img/chanel/Chanel_Gabrielle_mini_perfume_2504.jpg 619,619,310,641,0 589,451,765,490,0
+./img/chanel/chanel_girl_poster_1.jpg 531,531,829,673,0
+./img/chanel/chanel_j12_38mm_black_ceramic_diamond_dial_automatic_bracelet_watch_p11711_28981_image.png 423,423,546,449,0
+./img/chanel/Chanel_J12_Quartz_33mm_h4656.jpg 619,619,403,647,0
+./img/chanel/chanel_j12_untitled_38mm_white_ceramic_steel_bracelet_watch_p10838_25095_image.png 475,475,634,498,0
+./img/chanel/chanel_landing_2.jpg 573,573,615,617,0
+./img/chanel/chanel_landing_3.jpg 791,791,476,819,0
+./img/chanel/chanel_landing_4.jpg 595,595,638,645,0
+./img/chanel/Chanel_landing_page_image_desktop18.jpg 38,38,844,85,0
+./img/chanel/chanel_laregcat1_desktop_1150x650.jpg 127,127,480,149,0 175,470,196,582,0 740,572,874,601,0 991,57,1023,171,0
+./img/chanel/chanel_logos.jpg 126,126,301,287,0
+./img/chanel/chanel_logo_3_3d_model_obj_mtl_3ds_fbx_c4d_lwo_lw_lws_ma_mb.jpg 858,858,1412,1018,0
+./img/chanel/Chanel_Logo_Framed_Print_2000857_800x800.jpg 502,502,571,570,0 228,234,571,494,0
+./img/chanel/chanel_london_studio_090819.jpg 131,131,334,165,0
+./img/chanel/chanel_main.jpg 337,337,599,417,0
+./img/chanel/chanel_mens_fragrances_bleu_de_chanel_1919.jpg 214,214,333,249,0 440,416,501,454,0 45,272,94,314,0 471,130,518,160,0
+./img/chanel/Chanel_No._5_Fragrance_Austin_Calhoon_Photograph.jpg 384,384,367,414,0
+./img/chanel/chanel_noir_pink_print_only_.jpg 399,399,325,413,0
+./img/chanel/chanel_poster_2.jpg 21,21,800,1171,0
+./img/chanel/chanel_premiere_velours_18ct_yellow_gold_black_dial_rubber_strap_watch_p11714_28986_image.png 429,429,539,449,0
+./img/chanel/chanel_premiere_velours_18ct_yellow_gold_diamond_dial_ladies_watch_p11715_28987_image.png 429,429,540,452,0
+./img/chanel/CHANEL_SLIPCASE_2048x.jpg 127,127,1655,278,0
+./img/chanel/Chanel_Sneakers_Pharrell_White_Multi_Color_Product.jpg 380,380,846,468,0 857,520,922,568,0
+./img/chanel/chanel_ss1912.jpg 909,909,873,979,0
+./img/chanel/chanel_sun_1.jpg 154,154,728,223,0
+./img/chanel/Chanel_Transparent_Naked_PVC_See_Through_Beauty_Lock_Flap_Main_1200x1200.jpg 732,732,624,807,0 515,673,632,704,0
+./img/chanel/chanel_unisex_perfume_t.jpg 209,209,471,232,0 647,209,742,232,0 97,211,195,234,0
+./img/chanel/chanel_web03.jpg 668,668,812,717,0
+./img/chanel/chanel_web07_1.jpg 20,20,824,63,0
+./img/chanel/chanel_web12.jpg 9,9,492,52,0
+./img/chanel/chanel_web14.jpg 356,356,801,384,0
+./img/chanel/chanel_web15.jpg 490,490,744,518,0
+./img/chanel/chanel_winter_collection_2019_1929.jpg 343,343,105,367,0 24,440,65,483,0 347,235,375,288,0
+./img/chanel/CHANEL__EC_83_A4_EB_84_AC__EB_9E_A8_EC_8A_A4_ED_82_A8__EC_A0_90_EB_B3_B4__ED_81_B4_EB_9E_98_EC_8B_9D.jpg 239,239,495,469,0 303,471,392,509,0
+./img/chanel/cheap_perfumes_chanel_coco_mademoiselle_and_Aldi_feminine_eau_de_toilette.jpg 631,631,574,668,0
+./img/chanel/cheap_perfumes_chanel_no5_and_aldi_5th_Element_Eau_De_Toilette_920x581.jpg 293,293,286,317,0
+./img/chanel/ch_570678344194305_1.jpg 333,333,353,384,0
+./img/chanel/ch_570698344194305_5.jpg 331,331,327,382,0
+./img/chanel/coco_chanel_logo_suzanne_corbett.jpg 551,551,685,642,0 256,249,648,535,0
+./img/chanel/coco_chanel_paris_780x420.jpg 235,235,469,323,0
+./img/chanel/Coco_Chanel_Perfume_Bottle_b_5e410f31_ea8f_4e96_af37_916282e89e14_530x_2x.jpg 480,480,492,499,0
+./img/chanel/coco_mademoiselle_chanel_intense_campaign.jpg 344,344,532,368,0
+./img/chanel/coco_mademoiselle_eau_de_parfum_intense_spray_3_4fl_oz__packshot_default_116660_8820672266270.jpg 2142,2142,2193,2262,0
+./img/chanel/coveted_The_House_of_Chanel_photos.jpg 110,110,531,185,0
+./img/chanel/csm_Lempertz_1082_18_Hommage_a_Coco_The_CHANEL_Sale_Chanel_A_Chanel_Paris_No_5_facti_27816c39db.jpg 1085,1085,1506,1172,0
+./img/chanel/entete_1440x748_0.jpg 233,233,898,303,0
+./img/chanel/Gabrielle_EaudeParfum_HeyPretty.jpg 482,482,363,512,0
+./img/chanel/gettyimages_1144020487_e1560280652310.jpg 89,89,1917,295,0
+./img/chanel/https___blogs_images.forbes.com_tiffanyleigh_files_2018_08_MA2018_22_0117_1200x1597.jpg 983,983,557,1017,0
+./img/chanel/https___kr.hypebeast.com_files_2018_08_chanel_mens_beauty_2018.jpg 135,135,587,168,0
+./img/chanel/https___kr.hypebeast.com_files_2018_08_chanel_mens_beauty_2018_1.jpg 401,401,546,423,0 474,315,534,334,0 304,406,343,442,0
+./img/chanel/https___kr.hypebeast.com_files_2018_08_chanel_mens_beauty_2018_4.jpg 451,451,597,472,0 220,435,294,457,0 226,338,291,355,0
+./img/chanel/iconique_01.jpg 531,531,732,636,0
+./img/chanel/iconique_03.jpg 642,642,805,799,0
+./img/chanel/image.jpg 155,155,161,188,0 393,269,447,285,0
+./img/chanel/IMG_2227.jpg 786,786,591,893,0 815,232,929,332,0
+./img/chanel/KakaoTalk_20190128_144114989.jpg 291,291,494,336,0 497,509,555,550,0
+./img/chanel/kisspng_chanel_brand_prop_studios_fashion_logo_oc_transpo_5b1bdce427c4b2.9094729315285526761629.jpg 405,405,720,500,0 181,1,721,392,0
+./img/chanel/maxresdefault_(10).jpg 495,495,944,606,0
+./img/chanel/maxresdefault_(12).jpg 351,351,630,429,0
+./img/chanel/maxresdefault_(5).jpg 383,383,1148,624,0
+./img/chanel/maxresdefault_(6).jpg 235,235,599,259,0
+./img/chanel/maxresdefault_(8).jpg 314,314,874,409,0
+./img/chanel/methode_sundaytimes_prod_web_bin_e977e304_4320_11e8_a171_006f480ab6fd.jpg 113,113,374,145,0 134,268,201,312,0 597,141,649,195,0
+./img/chanel/NEWS0174_001.jpg 677,677,149,699,0 228,675,319,701,0 391,675,490,701,0 560,677,651,699,0 724,675,821,701,0 891,676,986,700,0
+./img/chanel/New_makeup_launches_for_September_Chanel_Laura_Mercier_NYX.jpg 653,653,399,712,0
+./img/chanel/N_TopBanner_Chanel_mobil_1D.jpg 135,135,348,187,0 505,246,590,264,0
+./img/chanel/oiwgzvptetmja0hvida6.jpg 338,338,345,351,0
+./img/chanel/pic_chanel.jpg 145,145,576,221,0
+./img/chanel/preview_chanel_2013_01_29.jpg 236,236,915,390,0 332,515,544,671,0
+./img/chanel/quadro_chanel_gocce_nere_stampa_su_tela_arredamento_arte_moderna_chv42.jpg 56,56,424,224,0
+./img/chanel/quadro_ispirato_a_chanel_occhi_quadro_moderno_stampe_su_tela_arte_moderna_arredamento_cho60.jpg 300,300,504,369,0 198,245,457,295,0
+./img/chanel/quadro_ispirato_a_chanel_rose_di_tempera_bianco_quadro_moderno_stampe_su_tela_arte_moderna_arredamen.jpg 157,157,427,216,0
+./img/chanel/quadro_ispirato_a_chanel_zoom_profumo_chanel_n5_quadro_moderno_stampe_su_tela_arte_moderna_arredamen.jpg 298,298,553,394,0 34,240,131,262,0
+./img/chanel/r_EN_ChanelAccessories_040219.jpg 991,991,510,1091,0
+./img/chanel/r_EN_ChanelBFTweed_040219.jpg 37,37,1162,124,0
+./img/chanel/r_EN_ChanelCamelia_021119.jpg 491,491,677,587,0
+./img/chanel/r_EN_ChanelCocoCrush_040219.jpg 1070,1070,1128,1142,0
+./img/chanel/r_EN_ChanelJ12_061719.jpg 359,359,733,456,0
+./img/chanel/s028_main.png 193,193,471,255,0
+./img/chanel/social.12345.jpg 293,293,672,324,0
+./img/chanel/style_59dc579603608_768x1024.jpg 429,429,461,463,0
+./img/chanel/style_5a391bdaa384e.jpg 172,172,844,218,0
+./img/chanel/Ut_HKthATH4eww8X4xMDoxOjBvMzuNSU.jpg 1493,1493,2034,1538,0
+./img/chanel/uzDEBSG0_cYRDkdtVrPPVffU4Po.jpg 191,191,356,208,0 564,112,589,135,0 311,262,368,278,0
+./img/chanel/u_3145891204001_01.jpg 490,490,685,526,0 285,529,436,569,0 87,535,232,566,0
+./img/chanel/Which_Chanel_5_Best.jpg 291,291,150,321,0 313,197,364,219,0
 ./img/chanel/pic_003.jpg 2144,2144,1730,2377,0
 ./img/chanel/pic_004.jpg 3154,3154,2195,3445,0
 ./img/chanel/pic_006.jpg 3474,3474,2131,3741,0

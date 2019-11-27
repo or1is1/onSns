@@ -112,6 +112,7 @@ ENV/
 chromedriver.exe
 out/
 img/
+model/
 *.pyc
 *.ipynb
 

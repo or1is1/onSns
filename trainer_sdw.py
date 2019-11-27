@@ -1,162 +1,230 @@
-import os
-import numpy as np
-import cv2
-import pandas as pd
-import matplotlib.pyplot as plt
-import tensorflow as tf
-import random
-import time
-
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import OneHotEncoder
 
+import matplotlib.pyplot as plt
+import tensorflow as tf
+import numpy as np
+import cv2
+import time
+import math
+import os
 
-# def train():
-path = 'img/_train/'
-filenames = os.listdir(path)
 
-columns = ['filename', 'width', 'height']
-df = pd.DataFrame(columns=columns)
-label = []
-data = []
-size = 80
+def train():
+    ##### load img #####
+    path = 'img/_pre/'
+    filenames = os.listdir(path)
+    label = []
+    data = []
+    size = 80
 
-for filename in filenames:
-    label.append(filename[0])
-    img = cv2.imread(path + filename) # 4 color
-#     img = cv2.imread(path + filename, cv2.IMREAD_GRAYSCALE) # 4 Gray
-    img = cv2.resize(img, (size, size))
-#     img = img.reshape(size, size, 1) # 4 Gray
-    img = img / 255
-    data.append(img)
-    
-start = time.time()
+    for filename in filenames:
+        label.append(filename[0])
+        img = cv2.imread(path + filename)
+        img = cv2.resize(img, (size, size))
+        img = img / 255
+        data.append(img)
+    ### load img end ###
 
-X_train, X_test, y_train, y_test = train_test_split(data, label)
+    ##### init var #####
+    x_train, x_test, y_train, y_test = train_test_split(data, label, train_size=0.6, random_state=42)
+    x_val, x_test, y_val, y_test = train_test_split(x_test, y_test, train_size=0.5, random_state=42)
 
-y_train = np.array(y_train)
-y_test = np.array(y_test)
+    y_train = np.array(y_train)
+    y_val = np.array(y_val)
+    y_test = np.array(y_test)
 
-y_train=y_train.reshape([-1,1])
-enc=OneHotEncoder()
-enc.fit(y_train)
-y_train=enc.transform(y_train).toarray()
+    enc = OneHotEncoder(categories='auto')
 
-y_test=y_test.reshape([-1,1])
-enc=OneHotEncoder()
-enc.fit(y_test)
-y_test=enc.transform(y_test).toarray()
+    y_train = y_train.reshape([-1, 1])
+    y_train = enc.fit_transform(y_train).toarray()
 
-tf.reset_default_graph()
-tf.set_random_seed(777)  # reproducibility
+    y_val = y_val.reshape([-1, 1])
+    y_val = enc.fit_transform(y_val).toarray()
 
-learning_rate = 0.01
-training_epochs = 100
-batch_size = 100
-keep_prob = tf.placeholder(tf.float32)
+    y_test = y_test.reshape([-1, 1])
+    y_test = enc.fit_transform(y_test).toarray()
 
-#80*80*3
-# X = tf.placeholder(tf.float32, shape=[None, size, size, 1]) # 4 Gray
-X = tf.placeholder(tf.float32, shape=[None, size, size, 3]) # 4 color
-Y = tf.placeholder(tf.float32, [None, 10])
+    tf.reset_default_graph() # 변수들의 컨텍스트가 유지되는 주피터 노트북에서 필요
+    tf.set_random_seed(777)
+    ### init var end ###
 
-#40*40*32
-# W1 = tf.Variable(tf.random_normal([3, 3, 1, 32], stddev=0.5)) # 4 Gray
-W1 = tf.Variable(tf.random_normal([3, 3, 3, 32], stddev=0.5)) # 4 color
-L1 = tf.nn.conv2d(X, W1, strides=[1, 1, 1, 1], padding='SAME')
-L1 = tf.nn.relu(L1)
-L1 = tf.nn.max_pool(L1, ksize=[1, 2, 2, 1],
-                    strides=[1, 2, 2, 1], padding='SAME')
-L1 = tf.nn.dropout(L1, keep_prob=keep_prob)
+    ##### CNN #####
+    stddev = 0.01
+    #80*80*3
+    X = tf.placeholder(tf.float32, shape=[None, size, size, 3], name='x')
+    Y = tf.placeholder(tf.float32, [None, 10], name='y')
 
-#20*20*64
-W2 = tf.Variable(tf.random_normal([3, 3, 32, 64], stddev=0.5))
-L2 = tf.nn.conv2d(L1, W2, strides=[1, 1, 1, 1], padding='SAME')
-L2 = tf.nn.relu(L2)
-L2 = tf.nn.max_pool(L2, ksize=[1, 2, 2, 1],
-                    strides=[1, 2, 2, 1], padding='SAME')
-L2 = tf.nn.dropout(L2, keep_prob=keep_prob)
+    #40*40*32
+    W1 = tf.Variable(tf.random_normal([3, 3, 3, 32], stddev=stddev))
+    L1 = tf.nn.conv2d(X, W1, strides=[1, 1, 1, 1], padding='SAME')
+    L1 = tf.nn.relu(L1)
+    L1 = tf.nn.max_pool(L1, ksize=[1, 2, 2, 1],
+                        strides=[1, 2, 2, 1], padding='SAME')
 
-#10*10*128
-W3 = tf.Variable(tf.random_normal([3, 3, 64, 128], stddev=0.5))
-L3 = tf.nn.conv2d(L2, W3, strides=[1, 1, 1, 1], padding='SAME')
-L3 = tf.nn.relu(L3)
-L3 = tf.nn.max_pool(L3, ksize=[1, 2, 2, 1],
-                    strides=[1, 2, 2, 1], padding='SAME')
+    #20*20*64
+    W2 = tf.Variable(tf.random_normal([3, 3, 32, 64], stddev=stddev))
+    L2 = tf.nn.conv2d(L1, W2, strides=[1, 1, 1, 1], padding='SAME')
+    L2 = tf.nn.relu(L2)
+    L2 = tf.nn.max_pool(L2, ksize=[1, 2, 2, 1],
+                        strides=[1, 2, 2, 1], padding='SAME')
 
-#5*5*256
-W4 = tf.Variable(tf.random_normal([3, 3, 128, 256], stddev=0.5))
-L4 = tf.nn.conv2d(L3, W4, strides=[1, 1, 1, 1], padding='SAME')
-L4 = tf.nn.relu(L4)
-L4 = tf.nn.max_pool(L4, ksize=[1, 2, 2, 1],
-                    strides=[1, 2, 2, 1], padding='SAME')
+    #10*10*128
+    W3 = tf.Variable(tf.random_normal([3, 3, 64, 128], stddev=stddev))
+    L3 = tf.nn.conv2d(L2, W3, strides=[1, 1, 1, 1], padding='SAME')
+    L3 = tf.nn.relu(L3)
+    L3 = tf.nn.max_pool(L3, ksize=[1, 2, 2, 1],
+                        strides=[1, 2, 2, 1], padding='SAME')
 
-L1_flat = tf.reshape(L4, [-1, 5 * 5 * 256])
-W1_flat = tf.Variable(tf.random_normal([5 * 5 * 256, 5 * 5 * 256]))
-B1_flat = tf.Variable(tf.random_normal([5 * 5 * 256]))
-L1_flat = tf.matmul(L1_flat, W1_flat) + B1_flat
+    #5*5*256
+    W4 = tf.Variable(tf.random_normal([3, 3, 128, 256], stddev=stddev))
+    L4 = tf.nn.conv2d(L3, W4, strides=[1, 1, 1, 1], padding='SAME')
+    L4 = tf.nn.relu(L4)
+    L4 = tf.nn.max_pool(L4, ksize=[1, 2, 2, 1],
+                        strides=[1, 2, 2, 1], padding='SAME')
 
-W2_flat = tf.Variable(tf.random_normal([5 * 5 * 256, 10]))
-B2_flat = tf.Variable(tf.random_normal([10]))
-logits = tf.matmul(L1_flat, W2_flat) + B2_flat
+    L1_flat = tf.reshape(L4, [-1, 5 * 5 * 256])
+    W1_flat = tf.Variable(tf.random_normal([5 * 5 * 256, 5 * 5 * 256]))
+    B1_flat = tf.Variable(tf.random_normal([5 * 5 * 256]))
+    L1_flat = tf.matmul(L1_flat, W1_flat) + B1_flat
 
-########################################################################
-cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=logits, labels=Y))
-optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(cost)
-correct_prediction = tf.equal(tf.argmax(logits, 1), tf.argmax(Y, 1))
-accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32))
+    W2_flat = tf.Variable(tf.random_normal([5 * 5 * 256, 10]))
+    B2_flat = tf.Variable(tf.random_normal([10]))
+    logits = tf.matmul(L1_flat, W2_flat) + B2_flat
+    ### CNN end ###
 
-# dataset = tf.data.Dataset.from_tensor_slices((X_train, y_train))
-# dataset = dataset.batch(50) #배치사이즈
-# iterator = dataset.make_initializable_iterator() #함수 호출, 
-# x_epoch, y_epoch = iterator.get_next() #next batch
+    ##### init #####
+    learning_rate = 0.001
+    cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=logits, labels=Y), name='loss')
+    optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(cost)
+    correct_prediction = tf.equal(tf.argmax(logits, 1), tf.argmax(Y, 1))
+    accuracy = tf.reduce_mean(tf.cast(correct_prediction, tf.float32), name='accr')
 
-sess = tf.Session()
-sess.run(tf.global_variables_initializer())
+    keep_prob = tf.placeholder(tf.float32)
+    saver = tf.train.Saver()
 
-tmplst2 = []
+    total_size = len(x_train)
+    batch_size = 2048
 
-step = 0
-count = 0
-min_loss_test = None
+    loss_train_list = []
+    loss_val_list = []
+    accr_val_list = []
+    ### init end ###
 
-# for epoch in range(training_epochs):
-while True:
-#     if step == 10:
-#         break
-    step += 1
-    loss_train, _ = sess.run([cost, optimizer], feed_dict = {X:X_train, Y:y_train, keep_prob: 1.0})
-    loss_test = sess.run(cost, feed_dict = {X: X_test, Y: y_test, keep_prob: 1.0})
-    
-    if min_loss_test is None:
-        min_loss_test = loss_test
-    elif loss_test >= min_loss_test:
-        count += 1
-    else:
-        min_loss_test = loss_test
-        count = 0
+    ##### Early stop #####
+    epoch = 0      # Epoch count
+    patient = 6    # Early stopping condition
+    stop_count = 0 # Early stop count
+    min_loss_val = None
+    max_accr_val = None
+    ### Early stop end ###
 
-    tmplst2.append(loss_test)
-    print('===== step : {} ====='.format(step))
-    print('train cost = {}'.format(loss_train))
-    print('test cost = {}'.format(loss_test))
-    print('count = {}'.format(count))
-    
-    if count == 1:
-        pass # TODO saveModel()
-    elif count >= 4:
-        print('time = {}s'.format(time.time() - start))
-        print('===== Learning Finished =====')
-        break
+    ##### train #####
+    with tf.Session() as sess:
+        sess.run(tf.global_variables_initializer())
 
-acc_v = sess.run(accuracy, feed_dict={X:X_test, Y:y_test, keep_prob: 1.0})
-# print(tf.argmax(a))
-print("Accr :{:2.2f}%".format(acc_v * 100))
+        start = time.time()
 
-if len(tmplst2) > 10:
-    tmplst2 = tmplst2[-10:]
+        while True:
+            epoch += 1
 
-plt.plot(range(len(tmplst2)), tmplst2, c ='r')
-plt.show()
+            try:
+                for i in range(math.ceil(total_size / batch_size)):
+                    batch_x_data = x_train[batch_size * i:batch_size * (i + 1)]
+                    batch_y_data = y_train[batch_size * i:batch_size * (i + 1)]
+                    loss_train, _ = sess.run([cost, optimizer], feed_dict={X:batch_x_data, Y:batch_y_data, keep_prob:0.5})
+            except:
+                if batch_size != 0:
+                    print("batch_size from {}".format(batch_size), end=" ")
+                    batch_size //= 2
+                    print("to {}".format(batch_size))
+                    continue
+                else:
+                    raise
 
-# train()
+            accr_val, loss_val = sess.run([accuracy, cost], feed_dict={X:x_val, Y:y_val})
+
+            if min_loss_val is None:
+                min_loss_val = loss_val
+            else:
+                if loss_val >= min_loss_val:
+                    stop_count += 1
+                else:
+                    min_loss_val = loss_val
+                    stop_count = 0
+
+            if max_accr_val is None:
+                max_accr_val = accr_val
+            else:
+                if accr_val > max_accr_val:
+                    max_accr_val = accr_val
+                    if accr_val >= 0.9:
+                        save_file = './model/{:.2f}%_{:.4f}.ckpt'.format(accr_val * 100, loss_val)
+                        saver.save(sess, save_file)
+
+            if stop_count <= patient:
+                print('epoch = {} | loss = {:.4f} | accr = {:.2f}% | count = {}'.format(epoch, loss_val, accr_val * 100, stop_count))
+            else:
+                print('===== Learning Finished =====')
+                print('time = {}s'.format(time.time() - start))
+                break
+
+            loss_train_list.append(loss_train)
+            loss_val_list.append(loss_val)
+            accr_val_list.append(accr_val)
+
+        acc_v = sess.run(accuracy, feed_dict={X:x_test, Y:y_test})
+        # print(tf.argmax(a))
+        print("Accr :{:2.2f}%".format(acc_v * 100))
+    ### train end ###
+
+    ##### Plot #####
+    lenGraph = len(loss_train_list)
+    plt.plot(range(lenGraph), loss_train_list)
+    plt.plot(range(lenGraph), loss_val_list, c ='r')
+    plt.plot(range(lenGraph), accr_val_list, c ='g')
+    plt.ylim(0, 1)
+    plt.xlim(0, lenGraph)
+    plt.tight_layout()
+    plt.show()
+    ### Plot end ###
+
+def load():
+    ##### load img #####
+    path = 'img/_test/'
+    filenames = os.listdir(path)
+    label = []
+    data = []
+    size = 80
+
+    for filename in filenames:
+        label.append(filename[0])
+        img = cv2.imread(path + filename)
+        img = cv2.resize(img, (size, size))
+        img = img / 255
+        data.append(img)
+    ### load img end ###
+
+
+    enc = OneHotEncoder(categories='auto')
+    label = np.array(label)
+    label = label.reshape([-1, 1])
+    label = enc.fit_transform(label).toarray()
+
+    ##### Load model #####
+    with tf.Session() as sess:
+        start = time.time()
+        saver = tf.train.import_meta_graph('model/92.99%_0.3473.ckpt.meta')
+        saver.restore(sess, tf.train.latest_checkpoint('model/'))
+        graph = tf.get_default_graph()
+
+        x = graph.get_tensor_by_name("x:0")
+        y = graph.get_tensor_by_name("y:0")
+        feed_dict = {x:data, y:label}
+
+        loss = graph.get_tensor_by_name("loss:0")
+        accr = graph.get_tensor_by_name("accr:0")
+
+        loss, accr = sess.run([loss, accr], feed_dict)
+        print('loss = {:.4f} | accr = {:.2f}% | time = {}s'.format(loss, accr * 100, time.time() - start))
+    ### Load model end ###
