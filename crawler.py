@@ -1,234 +1,192 @@
 # -*- coding: utf-8 -*-
-import time
-import pandas as pd
-import numpy as np
+from bs4 import BeautifulSoup
+from konlpy.tag import Hannanum
+from konlpy.tag import Twitter
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from urllib.parse import quote_plus
+from urllib.request import urlopen
+
+import konlpy.tag
 import matplotlib.pyplot as plt
+import numpy as np
+import os
+import pandas as pd
 import platform
 import re
 import time
-import os
-import konlpy.tag
 
-from urllib.request import urlopen
-from urllib.parse import quote_plus
-from konlpy.tag import Twitter
-from konlpy.tag import Hannanum
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from bs4 import BeautifulSoup
+def crawl(sns_id, passwd, keyword, count, site):
+	start = time.time()
+	'''
+	keyword : 검색할 키워드
+	count : 스크롤할 횟수
+	site == 0 : 인스타
+	site == 1 : 핀터
+	site == 2 : 페북
+	'''
+	save_dir = './out/{}/'.format(time.strftime('%y%m%d_%H%M%S', time.localtime(time.time())))
+	img_dir = save_dir + 'img/'
+	excel_dir = save_dir + 'excel/'
+	# options = webdriver.ChromeOptions()
+	# options.add_argument('headless')
+	# options.add_argument('window-size=1920x1080')
+	# options.add_argument("user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36")
+	# options.add_argument("disable-gpu") # GPU 가속이 문제가 될 경우 해당 옵션 활성화 하여, GPU 가속 끄기 or
+	# options.add_argument("--disable-gpu") # GPU 가속이 문제가 될 경우 해당 옵션 활성화 하여, GPU 가속 끄기
+	# driver = webdriver.Chrome('chromedriver', chrome_options=options)
+	driver = webdriver.Chrome('chromedriver')
+	driver.implicitly_wait(5) # 최대 5초 대기
+	
+	if site == 0:
+		driver.get("https://www.instagram.com/")
+		elem = driver.find_element_by_name('emailOrPhone')
+		elem.send_keys(sns_id)
+		elem = driver.find_element_by_name('password')
+		elem.send_keys(passwd)
+		elem.send_keys(Keys.RETURN)
+		# 로그인
+		time.sleep(3) # TODO 로딩 문제 해결되면 지우기..
+		baseUrl = 'https://www.instagram.com/explore/tags/'
+		url = baseUrl + quote_plus(keyword)
+		# time.sleep(3) # TODO delete
+		# WebDriverWait # TODO 가장 이상적인 방식이지만, 수정할 내용이 많음.
+		driver.get(url)
+		elem = driver.find_element_by_tag_name('body')
+		page1 = driver.page_source
+		soup1 = BeautifulSoup(page1, 'html.parser')
+		wrong_tag = soup1.find_all('div', 'error-container -cx-PRIVATE-ErrorPage__errorContainer -cx-PRIVATE-ErrorPage__errorContainer__')
+		
+		if len(wrong_tag): # 잘못된 태그 사용
+			print("error code {}".format(-1))
+			return -1
+		
+		img_url_list = []
+		img_list = []
+		box = [1, 2, 3, 4]
+		n = 1
+		pagedowns = 1
+		prv_len_img = None
 
+		while True:
+			elem = driver.find_element_by_tag_name('body')
+			page1 = driver.page_source
+			soup1 = BeautifulSoup(page1, 'html.parser')
+			no_tag = soup1.find_all('div', '_4Kbb_ _wTvQ')
 
-def crawl(keyword, count, site):
-    '''
-    keyword : 검색할 키워드
-    count : 스크롤할 횟수
-    site == 0 : 인스타
-    site == 1 : 핀터
-    site == 2 : 페북
-    '''
-    save_dir = './out/{}/'.format(time.strftime('%y%m%d_%H%M%S', time.localtime(time.time())))
-    img_dir = save_dir + 'img/'
-    excel_dir = save_dir + 'excel/'
-    
-    # options = webdriver.ChromeOptions()
-    # options.add_argument('headless')
-    # options.add_argument('window-size=1920x1080')
-    # options.add_argument("user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36")
-    # options.add_argument("disable-gpu") # GPU 가속이 문제가 될 경우 해당 옵션 활성화 하여, GPU 가속 끄기 or
-    # options.add_argument("--disable-gpu") # GPU 가속이 문제가 될 경우 해당 옵션 활성화 하여, GPU 가속 끄기
-    # driver = webdriver.Chrome('chromedriver', chrome_options=options)
-    driver = webdriver.Chrome('chromedriver')
-    
-    if site == 0:
-        baseUrl = 'https://www.instagram.com/explore/tags/'
-        url = baseUrl + quote_plus(keyword)
-        driver.implicitly_wait(1)
-        # time.sleep(3) # TODO delete
-        # WebDriverWait # TODO 가장 이상적인 방식이지만, 수정할 내용이 많음.
-        driver.get(url)
-        
-        elem = driver.find_element_by_tag_name('body')
-        imgurl = []
-        box = [1, 2, 3, 4]
-        n = 1
-        pagedowns = 1
+			if len(no_tag): # 해당 태그 게시글 없음
+				print("error code {}".format(-2))
+				return -2
 
-        while pagedowns < int(count):
-            elem.send_keys(Keys.PAGE_DOWN)
-            time.sleep(1)
-            pagedowns += 1
-            page1 = driver.page_source
-            soup1 = BeautifulSoup(page1, 'html.parser')
-            a2 = soup1.find_all('div', 'Nnq7C weEfm')
-            for i in range(0, len(a2)):
-                for j in range(2):
-                    imgurl.append('https://www.instagram.com' + a2[i].find_all('a')[j]['href'])
+			img_urls = soup1.find_all('div', 'v1Nh3 kIKUG _bz0w')
 
-            imgurl = list(set(imgurl))
+			if len(img_urls) == 0:
+				continue
 
-        main_text = []
-        comment = []
-        sub_comment = []
+			images = soup1.find_all('div', 'KL4Bh')
 
-        for i in range(len(imgurl)):
-            url = imgurl[i]
+			for item in img_urls:
+				url_text = 'https://www.instagram.com' + item.find('a')["href"]
+				
+				if url_text not in img_url_list:
+					img_url_list.append(url_text)
 
-            driver.implicitly_wait(3)
-            driver.get(url)
+			for item in images:
+				try:
+					img = item.find('img')['src']
+				except KeyError:
+					print("error code {}".format(-3))
 
-            html = driver.page_source
-            soup = BeautifulSoup(html, 'html.parser')
+				if img not in img_list:
+					img_list.append(img)
 
-            insta = soup.select('._97aPb.wKWK0')
-            for j in insta:
-                while True:
-                    try:
-                        imgUrl = j.select_one('.KL4Bh').img['src']
-                        with urlopen(imgUrl) as f:
-                            if not os.path.isdir(img_dir):
-                                os.makedirs(os.path.join(img_dir))
-                            with open(img_dir + keyword + str(i)
-                                    + '.jpg', 'wb') as h:
-                                img = f.read()
-                                h.write(img)
-                        break
-                    except AttributeError:
-                        try:
-                            imgUrl = j.select_one('._5wCQW').img['src']
-                            with urlopen(imgUrl) as f:
-                                if not os.path.isdir(img_dir):
-                                    os.makedirs(os.path.join(img_dir))
-                                with open(img_dir + keyword + str(i)
-                                        + '.jpg', 'wb') as h:
-                                    img = f.read()
-                                    h.write(img)
-                            break
-                        except TypeError:
-                            print(url,i,'번째 이미지가 없습니다.')
-                            break
+			print("len img_url_list :", len(img_url_list))
+			print("len img_list :", len(img_list))
 
-            soup = BeautifulSoup(html, 'lxml')
-            insta = soup.select('.C4VMK')
-            
-            while True:
-                if insta is not None:
-                    for j in range(0, 1):
-                        title = [insta[j].find('span').text]
-                        sub_comment = []
-                        com = ' '
-                        main_text.append(title)
-                    for k in range(1, len(insta)):
-                        com = insta[k].find('span').text
-                        sub_comment.append(com)
-                    comment.append(sub_comment)
-                    break
+			cur_len_img = len(img_list)
 
-        uurl = []
+			# 로딩이 끝났으면 0,
+			# 로딩할게 남았으면 1
+			loading = len(soup1.find_all('div', '_4emnV'))
 
-        for i in range(0, len(imgurl)):
-            url = imgurl[i]
-            uurl.append(url)
-        data={'주소' : uurl, '본문' : main_text, '댓글' : comment}
+			if prv_len_img is None:
+				prv_len_img = cur_len_img
+			else:
+				if cur_len_img >= count or loading == 0:
+					with open("imgurls.txt", 'w') as file:
+						for line in img_url_list:
+							file.write(line + '\n')
+					print(cur_len_img, "image(s)")
+					break
+				elif cur_len_img < count:
+					prv_len_img = cur_len_img
+				else: # 예외 발생
+					print("error code {}".format(-2))
+					raise
+			elem.send_keys(Keys.PAGE_DOWN)
 
-        if not os.path.isdir(excel_dir):
-            os.makedirs(os.path.join(excel_dir))
+		for i, img in enumerate(img_list):
+			with urlopen(img) as f:
+				if not os.path.isdir(img_dir):
+					os.makedirs(os.path.join(img_dir))
+				with open(img_dir + keyword + str(i+1) + '.jpg', 'wb') as h:
+					img = f.read()
+					h.write(img)
+	elif site == 1:
+		baseUrl = 'https://www.pinterest.co.kr/'
+		#ps=input('입력')
+		#count = input('스크롤할 횟수를 입력하세요 : ')
+		driver=webdriver.Chrome('chromedriver')
+		driver.get(baseUrl)
 
-        df = pd.DataFrame(data)
-        df.to_excel(excel_dir + '{}.xlsx'.format(keyword), index=False,
-                    sheet_name='sheet1')
-        df = pd.read_excel(excel_dir + '{}.xlsx'.format(keyword))
+		driver.find_element_by_id('email').send_keys('qweewq1111@naver.com')
+		driver.find_element_by_id('password').send_keys('zzzzzzzz11')
+		driver.find_element_by_id('age').send_keys('25')
+		driver.find_element_by_id('email').send_keys(Keys.RETURN)
 
-        aaa = pd.read_excel(excel_dir + '{}.xlsx'.format(keyword),
-                            header=None)
-        content = aaa[1]
-        lines = content
+		time.sleep(3)
+		plusurl = 'search/pins/?q={0}&rs=typed&term_meta[]={0}%7Ctyped'.format(keyword)
 
-        hanna = Hannanum()
-        temp = []
-        for i in range(1, len(lines)):
-            temp.append(hanna.nouns(lines[i]))
-
-        def flatten(l):
-            flatList = []
-            for elem in l:
-                if type(elem) == list:
-                    for e in elem:
-                        flatList.append(e)
-                else:
-                    flatList.append(elem)
-            return flatList
-
-        word_list = flatten(temp)
-        word_list = pd.Series([x for x in word_list if len(x) > 1])
-        d = word_list.value_counts()
-        d.to_excel(excel_dir + '{}_main.xlsx'.format(keyword))
-
-        aaa = pd.read_excel(excel_dir + '{}.xlsx'.format(keyword),
-                            header=None)
-        content = aaa[2]
-        lines = content
-
-        temp = []
-        for i in range(1, len(lines)):
-            temp.append(hanna.nouns(lines[i]))
-
-        word_list = flatten(temp)
-        word_list = pd.Series([x for x in word_list if len(x) > 1])
-
-        d = word_list.value_counts()
-        d.to_excel(excel_dir + '{}_comment.xlsx'.format(keyword))
-    elif site == 1:
-        baseUrl = 'https://www.pinterest.co.kr/'
-        #ps=input('입력')
-        #count = input('스크롤할 횟수를 입력하세요 : ')
-        driver=webdriver.Chrome('chromedriver')
-        driver.get(baseUrl)
-
-        driver.find_element_by_id('email').send_keys('qweewq1111@naver.com')
-        driver.find_element_by_id('password').send_keys('zzzzzzzz11')
-        driver.find_element_by_id('age').send_keys('25')
-        driver.find_element_by_id('email').send_keys(Keys.RETURN)
-
-        time.sleep(3)
-        plusurl = 'search/pins/?q={0}&rs=typed&term_meta[]={0}%7Ctyped'.format(keyword)
-
-        url = baseUrl + (plusurl)
-        driver.get(url)
+		url = baseUrl + (plusurl)
+		driver.get(url)
 
 
-        page = driver.page_source
-        soup = BeautifulSoup(page)
-        a2 = soup.find_all('div',"Yl- MIw Hb7")
+		page = driver.page_source
+		soup = BeautifulSoup(page)
+		a2 = soup.find_all('div',"Yl- MIw Hb7")
 
-        elem = driver.find_element_by_tag_name("body")
-        imgurl = []
+		elem = driver.find_element_by_tag_name("body")
+		imgurl = []
 
-        n=1
-        pagedowns=1
+		n=1
+		pagedowns=1
 
-        while pagedowns < int(count):
-            elem.send_keys(Keys.PAGE_DOWN)
-            time.sleep(1)
-            pagedowns += 1
-            page1 = driver.page_source
-            soup1 = BeautifulSoup(page1)
-            a2 = soup1.find_all('div',"Yl- MIw Hb7")
-            for i in range(0, len(a2)):
-                imgUrl = a2[i].select_one('.hCL.kVc.L4E.MIw').get('src')
-                imgurl.append(imgUrl)
-            imgurl = list(set(imgurl))
-        save_dir = './out/{}/'.format(time.strftime('%y%m%d_%H%M%S', time.localtime(time.time())))
-        img_dir = save_dir + 'img/'
-        n=1
-        for i in imgurl:
-            with urlopen(i) as f:
-                if not os.path.isdir(img_dir):
-                    os.makedirs(os.path.join(img_dir))
-                with open(img_dir + keyword + str(n) + '.jpg', 'wb') as h:
-                    img = f.read()
-                    h.write(img)
-                    n+=1
-    else:
-        raise
-        
-    driver.quit()
+		while pagedowns < int(count):
+			elem.send_keys(Keys.PAGE_DOWN)
+			time.sleep(1)
+			pagedowns += 1
+			page1 = driver.page_source
+			soup1 = BeautifulSoup(page1)
+			a2 = soup1.find_all('div',"Yl- MIw Hb7")
+			for i in range(0, len(a2)):
+				imgUrl = a2[i].select_one('.hCL.kVc.L4E.MIw').get('src')
+				imgurl.append(imgUrl)
+			imgurl = list(set(imgurl))
+		save_dir = './out/{}/'.format(time.strftime('%y%m%d_%H%M%S', time.localtime(time.time())))
+		img_dir = save_dir + 'img/'
+		n=1
+		for i in imgurl:
+			with urlopen(i) as f:
+				if not os.path.isdir(img_dir):
+					os.makedirs(os.path.join(img_dir))
+				with open(img_dir + keyword + str(n) + '.jpg', 'wb') as h:
+					img = f.read()
+					h.write(img)
+					n+=1
+	else:
+		raise
+		
+	driver.quit()
+	print("It takes {:.2f} second(s)".format(time.time() - start))
+
+crawl("jonson131214@gmail.com", "q1w2e3r4!@", "나스", 200, 0)
