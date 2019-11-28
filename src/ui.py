@@ -80,7 +80,10 @@ class MyWindow(QMainWindow):
 		if 1 not in self.crawlDict.values():
 			QMessageBox.warning(self, "Warning", "크롤링 할 SNS 사이트를 하나 이상 선택해 주세요.")
 		else:
-			subprocess.call("explorer {}".format(os.getcwd() + "\\out"), shell=True)
+			save_dir = os.getcwd() + "\\out"
+			if not os.path.isdir(save_dir):
+				os.makedirs(os.path.join(save_dir))
+			subprocess.call("explorer {}".format(save_dir), shell=True)
 			for i, sns in enumerate(self.crawlDict.values()):
 				if sns == 1 :
 					count = int(self.count.text())

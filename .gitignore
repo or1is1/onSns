@@ -110,6 +110,7 @@ ENV/
 
 # onSns Add
 chromedriver.exe
+crawl/
 out/
 img/
 model/
