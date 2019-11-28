@@ -128,7 +128,7 @@ def crawl(sns_id, passwd, keyword, count, site):
 				with open(img_dir + filename, 'wb') as h:
 					img = f.read()
 					h.write(img)
-			with open("{}url.txt".format(save_dir), 'a') as file:
+			with open("{}url.csv".format(save_dir), 'a') as file:
 				file.write(img_url_list[i] + ',')
 				file.write(filename + '\n')
 	elif site == 1:
