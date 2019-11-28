@@ -80,7 +80,7 @@ class MyWindow(QMainWindow):
 		if 1 not in self.crawlDict.values():
 			QMessageBox.warning(self, "Warning", "크롤링 할 SNS 사이트를 하나 이상 선택해 주세요.")
 		else:
-			save_dir = os.getcwd() + "\\out"
+			save_dir = os.getcwd() + "\\crawl"
 			if not os.path.isdir(save_dir):
 				os.makedirs(os.path.join(save_dir))
 			subprocess.call("explorer {}".format(save_dir), shell=True)
@@ -93,7 +93,7 @@ class MyWindow(QMainWindow):
 						cr.crawl("qweewq1111@naver.com", "zzzzzzzz11", keyword, count, 1)
 
 	def analyse(self) :
-		path = "./out/"
+		path = "./crawl/"
 		folderList = os.listdir(path)
 		anaList = []
 

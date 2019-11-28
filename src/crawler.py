@@ -18,7 +18,7 @@ import time
 
 def crawl(sns_id, passwd, keyword, count=100, site=0):
 	start = time.time()
-	save_dir = 'out/{}_{}_{}_{}/'.format(time.strftime('%y%m%d_%H%M%S', time.localtime(time.time())), site, keyword, count)
+	save_dir = 'crawl/{}_{}_{}_{}/'.format(time.strftime('%y%m%d_%H%M%S', time.localtime(time.time())), site, keyword, count)
 	img_dir = save_dir + 'img/'
 	'''
 	keyword : 검색할 키워드
@@ -186,7 +186,7 @@ def crawl(sns_id, passwd, keyword, count=100, site=0):
 				imgurl.append(imgUrl)
 			imgurl = list(set(imgurl))
 
-		save_dir = './out/{}/'.format(time.strftime('%y%m%d_%H%M%S', time.localtime(time.time())))
+		save_dir = './crawl/{}/'.format(time.strftime('%y%m%d_%H%M%S', time.localtime(time.time())))
 		img_dir = save_dir + 'img/'
 		n=1
 		for i in imgurl:
