@@ -25,7 +25,7 @@ def crawl(sns_id, passwd, keyword, count, site):
 	site == 1 : 핀터
 	site == 2 : 페북
 	'''
-	save_dir = './out/{}/'.format(time.strftime('%y%m%d_%H%M%S', time.localtime(time.time())))
+	save_dir = 'out/{}/'.format(time.strftime('%y%m%d_%H%M%S', time.localtime(time.time())))
 	img_dir = save_dir + 'img/'
 	excel_dir = save_dir + 'excel/'
 	# options = webdriver.ChromeOptions()
@@ -46,7 +46,7 @@ def crawl(sns_id, passwd, keyword, count, site):
 		elem.send_keys(passwd)
 		elem.send_keys(Keys.RETURN)
 		# 로그인
-		time.sleep(3) # TODO 로딩 문제 해결되면 지우기..
+		time.sleep(2) # TODO 로딩 문제 해결되면 지우기..
 		baseUrl = 'https://www.instagram.com/explore/tags/'
 		url = baseUrl + quote_plus(keyword)
 		# time.sleep(3) # TODO delete
@@ -100,9 +100,6 @@ def crawl(sns_id, passwd, keyword, count, site):
 				if img not in img_list:
 					img_list.append(img)
 
-			print("len img_url_list :", len(img_url_list))
-			print("len img_list :", len(img_list))
-
 			cur_len_img = len(img_list)
 
 			# 로딩이 끝났으면 0,
@@ -113,9 +110,8 @@ def crawl(sns_id, passwd, keyword, count, site):
 				prv_len_img = cur_len_img
 			else:
 				if cur_len_img >= count or loading == 0:
-					with open("imgurls.txt", 'w') as file:
-						for line in img_url_list:
-							file.write(line + '\n')
+					if not os.path.isdir(img_dir):
+						os.makedirs(os.path.join(img_dir))
 					print(cur_len_img, "image(s)")
 					break
 				elif cur_len_img < count:
@@ -126,25 +122,27 @@ def crawl(sns_id, passwd, keyword, count, site):
 			elem.send_keys(Keys.PAGE_DOWN)
 
 		for i, img in enumerate(img_list):
+			filename = keyword + str(i+1) + '.jpg'
+
 			with urlopen(img) as f:
-				if not os.path.isdir(img_dir):
-					os.makedirs(os.path.join(img_dir))
-				with open(img_dir + keyword + str(i+1) + '.jpg', 'wb') as h:
+				with open(img_dir + filename, 'wb') as h:
 					img = f.read()
 					h.write(img)
+			with open("{}url.txt".format(save_dir), 'a') as file:
+				file.write(img_url_list[i] + ',')
+				file.write(filename + '\n')
 	elif site == 1:
 		baseUrl = 'https://www.pinterest.co.kr/'
 		#ps=input('입력')
 		#count = input('스크롤할 횟수를 입력하세요 : ')
-		driver=webdriver.Chrome('chromedriver')
 		driver.get(baseUrl)
 
-		driver.find_element_by_id('email').send_keys('qweewq1111@naver.com')
-		driver.find_element_by_id('password').send_keys('zzzzzzzz11')
+		driver.find_element_by_id('email').send_keys(sns_id)
+		driver.find_element_by_id('password').send_keys(passwd)
 		driver.find_element_by_id('age').send_keys('25')
 		driver.find_element_by_id('email').send_keys(Keys.RETURN)
 
-		time.sleep(3)
+		time.sleep(1)
 		plusurl = 'search/pins/?q={0}&rs=typed&term_meta[]={0}%7Ctyped'.format(keyword)
 
 		url = baseUrl + (plusurl)
@@ -188,5 +186,3 @@ def crawl(sns_id, passwd, keyword, count, site):
 		
 	driver.quit()
 	print("It takes {:.2f} second(s)".format(time.time() - start))
-
-crawl("jonson131214@gmail.com", "q1w2e3r4!@", "나스", 200, 0)
