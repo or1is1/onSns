@@ -16,7 +16,7 @@ import platform
 import re
 import time
 
-def crawl(sns_id, passwd, keyword, count, site):
+def crawl(sns_id, passwd, keyword, count=100, site=0):
 	start = time.time()
 	'''
 	keyword : 검색할 키워드
@@ -63,9 +63,6 @@ def crawl(sns_id, passwd, keyword, count, site):
 		
 		img_url_list = []
 		img_list = []
-		box = [1, 2, 3, 4]
-		n = 1
-		pagedowns = 1
 		prv_len_img = None
 
 		while True:
@@ -133,8 +130,6 @@ def crawl(sns_id, passwd, keyword, count, site):
 				file.write(filename + '\n')
 	elif site == 1:
 		baseUrl = 'https://www.pinterest.co.kr/'
-		#ps=input('입력')
-		#count = input('스크롤할 횟수를 입력하세요 : ')
 		driver.get(baseUrl)
 
 		driver.find_element_by_id('email').send_keys(sns_id)
