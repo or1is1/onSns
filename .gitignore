@@ -114,6 +114,7 @@ crawl/
 out/
 img/
 detect/
+ana/
 model/
 *.pyc
 *.ipynb
