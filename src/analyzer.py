@@ -54,11 +54,12 @@ def text(file_dir):
 
     save_dir = './crawl/'
     url_dir = save_dir + file_dir + '/url.csv'
+    
     df = pd.read_csv(url_dir, encoding = 'euc-kr', header = None)
-
+    
     urlList = []
     for ana in anaList:
-        url = df[df[0] == ana][1].tolist()[0]
+        url = df[df[1] == ana][0].tolist()[0]
         urlList.append(url)
 
     save_dir = './ana/'
@@ -70,12 +71,9 @@ def text(file_dir):
         for url in urlList:
             f.write(url + '\n')
 
-    df = pd.from_from_csv(full_path + "/url.csv")
-
-    imgurl = []
-    for i in range(len(df[0])):
-        url = df[0][i]
-        imgurl.append(url)
+    # df = pd.read_csv(full_path + "/url.csv")
+    with open(full_path + "/url.csv", 'r', encoding='utf-8') as tt:
+        imgurl = tt.readlines()
 
     driver = webdriver.Chrome('chromedriver')
     driver.implicitly_wait(2)
