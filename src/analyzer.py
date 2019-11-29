@@ -41,21 +41,46 @@ from tensorflow.keras import metrics
 
 #케라스 머신러닝 모델을 저장하고 다시 불러오기 위함.
 from keras.models import load_model
-def text(keyword):
-    save_dir = './out/'
-    file_list = os.listdir(save_dir)
-    file_list.sort(reverse=True)
-    file_dir=file_list[0]
-    url_dir=save_dir+file_dir+'/'+'url.txt'
-    df=pd.read_csv(url_dir, encoding='euc-kr', header=None)
-    imgurl=[]
+def text(file_dir):
+    files = os.listdir(file_dir)
+
+    anaList = []
+    for file in files:
+        if file[-3:] == "jpg":
+            anaList.append(file)
+
+    file_dir = file_dir.split('/')[-2]
+    keyword = file_dir.split('_')[-1]
+
+    save_dir = './crawl/'
+    url_dir = save_dir + file_dir + '/url.csv'
+    df = pd.read_csv(url_dir, encoding = 'euc-kr', header = None)
+
+    urlList = []
+    for ana in anaList:
+        url = df[df[0] == ana][1].tolist()[0]
+        urlList.append(url)
+
+    save_dir = './ana/'
+    full_path = save_dir+file_dir + '/'
+
+    if not os.path.isdir(full_path):
+        os.makedirs(full_path)
+    with open(full_path + "/url.csv", 'a') as f:
+        for url in urlList:
+            f.write(url + '\n')
+
+    df = pd.from_from_csv(full_path + "/url.csv")
+
+    imgurl = []
     for i in range(len(df[0])):
-        url=df[0][i]
+        url = df[0][i]
         imgurl.append(url)
+
     driver = webdriver.Chrome('chromedriver')
     driver.implicitly_wait(2)
-    sns_id='jonson131214@gmail.com'
-    passwd='q1w2e3r4!@'
+    sns_id = 'jonson131214@gmail.com'
+    passwd = 'q1w2e3r4!@'
     driver.get("https://www.instagram.com/")
     elem = driver.find_element_by_name('emailOrPhone')
     elem.send_keys(sns_id)
@@ -63,7 +88,7 @@ def text(keyword):
     elem.send_keys(passwd)
     elem.send_keys(Keys.RETURN)
     # 로그인
-    time.sleep(2)
+    time.sleep(4)
 
     main_text = []
     comment = []
@@ -79,10 +104,10 @@ def text(keyword):
         while True:
             if insta is not None:
                 for j in range(0, 1):
-                    title = [insta[j].find('span').text]
-                    sub_comment = []
-                    com = ' '
-                    main_text.append(title)
+                        title = [insta[j].find('span').text]
+                        sub_comment = []
+                        com = ' '
+                        main_text.append(title)
                 for k in range(1, len(insta)):
                     com = insta[k].find('span').text
                     sub_comment.append(com)
@@ -94,25 +119,28 @@ def text(keyword):
     for i in range(0, len(imgurl)):
         url = imgurl[i]
         uurl.append(url)
-    data={'주소' : uurl, '본문' : main_text, '댓글' : comment}
+    data = {'주소' : uurl, '본문' : main_text, '댓글' : comment}
 
     df = pd.DataFrame(data)
-    df.to_excel(save_dir+file_dir+'/' + '{}.xlsx'.format(keyword), index=False,
-                sheet_name='sheet1')
+    try:
+        df.to_excel(save_dir+file_dir+'/{}.xlsx'.format(keyword), index = False,
+                sheet_name = 'sheet1')
+    except:
+        print(keyword)
 
     hangul = re.compile('[^ ㄱ-ㅣ가-힣a-zA-Z0-9]+')
-    c=[]
-    d=[]
+    c = []
+    d = []
     for i in range(len(main_text)):
-        main_text[i][0]=main_text[i][0].replace('#', ' ')
+        main_text[i][0] = main_text[i][0].replace('#', ' ')
         result = hangul.sub('', main_text[i][0])
         c.append(result)
 
-    data={'본문' : c}
+    data = {'본문' : c}
     df = pd.DataFrame(data)
-    df.to_excel(save_dir+file_dir+'/' + '{}Modified.xlsx'.format(keyword),
-                index=False, sheet_name='sheet1')
-    cnt =1
+    df.to_excel(save_dir+file_dir+'/{}Modified.xlsx'.format(keyword),
+                index = False, sheet_name = 'sheet1')
+    cnt  = 1
     #여기서 부터 감성분석을 합치는 중입니다.
 
     #형태소 분석하기 위한 라이브러리입니다.
@@ -122,24 +150,24 @@ def text(keyword):
     #불러와서 전처리 하는 과정입니다.
     def tokenize(doc):
         # norm은 정규화, stem은 근어로 표시하기를 나타냄
-        return ['/'.join(t) for t in okt.pos(doc, norm=True, stem=True)]
+        return ['/'.join(t) for t in okt.pos(doc, norm = True, stem = True)]
     #1.1파일을 읽어와서 라인 by 라인으로 세팅하는 함수.
     def read_data(filename):
         #encoding 을 UTF8로 해야, r을 rt로 바꿔야 에러가 안났다.
-        with open(filename, 'rt', encoding='UTF8') as f:
+        with open(filename, 'rt', encoding = 'UTF8') as f:
             data = [line.split('\t') for line in f.read().splitlines()]
             data = data[1:]
         return data
     #1.2ratings_train.txt, ratings_test.txt 는 네이버 영화리뷰를 긁어온 파일임.
-    #1.3이를 read_data()함수로 읽어옴 => 라인 by 라인으로 세팅한다는 뜻
+    #1.3이를 read_data()함수로 읽어옴  = > 라인 by 라인으로 세팅한다는 뜻
 
     train_data = read_data('./ratings_train.txt')
     test_data = read_data('./ratings_test.txt')
 
     if os.path.isfile('./train_docs.json'):
-        with open('./train_docs.json', encoding= "utf-8") as f:
+        with open('./train_docs.json', encoding =  "utf-8") as f:
             train_docs = json.load(f)
-        with open('./test_docs.json', encoding= "utf-8") as f:
+        with open('./test_docs.json', encoding =  "utf-8") as f:
             test_docs = json.load(f)
 
     #1.8 태깅된 파일이 없으면, 새로 태깅 시켜 파일로 저장합니다.       
@@ -151,14 +179,14 @@ def text(keyword):
     #형태소 분석(태깅)을 해 넣습니다.
         test_docs = [(tokenize(row[1]), row[2]) for row in test_data]
     #1.11 태깅된 train_docs, test_docs을 .json 파일로 각각 저장합니다. 
-        with open('./train_docs.json', 'w', encoding= "utf-8") as make_file:
-            json.dump(train_docs, make_file, ensure_ascii=False, indent="\t")
-        with open('./test_docs.json', 'w', encoding="utf-8") as make_file:
-            json.dump(test_docs, make_file, ensure_ascii=False, indent="\t")
+        with open('./train_docs.json', 'w', encoding =  "utf-8") as make_file:
+            json.dump(train_docs, make_file, ensure_ascii = False, indent = "\t")
+        with open('./test_docs.json', 'w', encoding = "utf-8") as make_file:
+            json.dump(test_docs, make_file, ensure_ascii = False, indent = "\t")
 
     #1.12 태깅한 json 파일에서 token들 만을 떼온다.(최종 토큰화 작업)
     tokens = [t for d in train_docs for t in d[0]]
-    text = nltk.Text(tokens, name='NMSC')
+    text = nltk.Text(tokens, name = 'NMSC')
     selected_words = [f[0] for f in text.vocab().most_common(100)]
 
     #1.21 (중요)학습된 문장내에서 가장 많이 언급된 (현재)100개의 토큰을
@@ -196,19 +224,19 @@ def text(keyword):
 
         model = models.Sequential()\
         #2.9 (중요)원레 input_shape 값은 10000개. 지금 설정은 100개(2019.11.21)
-        model.add(layers.Dense(64, activation='relu', input_shape=(100,)))
-        model.add(layers.Dense(64, activation='relu'))
-        model.add(layers.Dense(1, activation='sigmoid'))
+        model.add(layers.Dense(64, activation = 'relu', input_shape = (100,)))
+        model.add(layers.Dense(64, activation = 'relu'))
+        model.add(layers.Dense(1, activation = 'sigmoid'))
 
-        model.compile(optimizer=optimizers.RMSprop(lr=0.001),
-                     loss=losses.binary_crossentropy,
-                     metrics=[metrics.binary_accuracy])
+        model.compile(optimizer = optimizers.RMSprop(lr = 0.001),
+                     loss = losses.binary_crossentropy,
+                     metrics = [metrics.binary_accuracy])
 
         '''    
         #2.10 (중요)원래 batch_size 값은 512. 지금 설정은 10개(2019.11.21)
         원래 epoch 값은 10. 지금 설정은 3개(2019.11.22)
         '''
-        model.fit(x_train, y_train, epochs=3, batch_size=10)
+        model.fit(x_train, y_train, epochs = 3, batch_size = 10)
         results = model.evaluate(x_test, y_test)
 
         #print(results)
@@ -217,51 +245,51 @@ def text(keyword):
         model.save('model.h5')
     def predict_pos_neg(review):
         #3.1 새로운 문장을 토큰화
-        b=[]
-        c=[]
-        d=[]
-        cc=0
-        dd=0
+        b = []
+        c = []
+        d = []
+        cc = 0
+        dd = 0
 
         token = tokenize(review)
         #3.2 토큰화된 문장을 비교해줌.
         tf = term_frequency(token)
         #3.3 벡터화
-        data = np.expand_dims(np.asarray(tf).astype('float32'), axis=0)
+        data = np.expand_dims(np.asarray(tf).astype('float32'), axis = 0)
         #3.4 긍/부정 점수계산
         score = float(model.predict(data))
 
         if(score > 0.5):
             c = review 
-            ac = '{}% 확률로 긍정'.format(score * 100)
+            ac = '{:.2f}% 확률로 긍정'.format(score * 100)
             b.append(c)
-            cc += 1
+            cc +=  1
             return c, ac
 
         else:
-            d= review 
-            ad='{}% 확률로 부정'.format((1 - score) * 100)
+            d =  review 
+            ad = '{:.2f}% 확률로 부정'.format((1 - score) * 100)
             b.append(d)
-            dd += 1
+            dd +=  1
             return d, ad
 
-        #data={'머신러닝 짱짱 수듄 분석결과' : b}
+        #data = {'머신러닝 짱짱 수듄 분석결과' : b}
 
         #df = pd.DataFrame(b)
-        #df.to_excel(excel_dir + '{}Sentmental_analysis_counter'.format(keyword) + str(cnt) + '.xlsx', index=False,
-        #            sheet_name='sheet1')
+        #df.to_excel(excel_dir + '{}Sentmental_analysis_counter'.format(keyword) + str(cnt) + '.xlsx', index = False,
+        #            sheet_name = 'sheet1')
     df = pd.read_excel(save_dir+file_dir+'/' + '{}Modified.xlsx'.format(keyword))
-    c=[]
-    d=[]
+    c = []
+    d = []
     for i in range(len(df['본문'])):
-        a=df['본문'][i]
-        a=a.replace('[', '')
-        a=a.replace(']', '')
-        a=a.replace("'", '')
-        b=predict_pos_neg(a)
+        a = df['본문'][i]
+        a = a.replace('[', '')
+        a = a.replace(']', '')
+        a = a.replace("'", '')
+        b = predict_pos_neg(a)
         c.append(b[0])
         d.append(b[1])
-    data={'본문' : c, '분석' : d}
-    df=pd.DataFrame(data)
+    data = {'본문' : c, '분석' : d}
+    df = pd.DataFrame(data)
     df.to_excel(save_dir+file_dir+'/' + '{}Sentmental_analysis_counter'.format(keyword)
-                + '.xlsx', index=False, sheet_name='sheet1')
+                + '.xlsx', index = False, sheet_name = 'sheet1')

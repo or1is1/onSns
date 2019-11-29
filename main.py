@@ -6,7 +6,8 @@ import src.ui as ui
 import src.preprocessing as pre
 import src.trainer as tr
 import src.crawler as cr
-import yolo_video as yolo
+import src.analyzer as ana
+import yolo_onSns as yolo
 
 if __name__ == '__main__':
 	imgPath = "./img/"
@@ -21,8 +22,9 @@ if __name__ == '__main__':
 	# preprocess()
 
 	app = QApplication(sys.argv)
-	mywindow = ui.MyWindow(csvFileList, yolo.detect_img)
+	mywindow = ui.MyWindow(csvFileList, yolo.detect_img, ana.text)
 	mywindow.show()
+	# mywindow.auto()
 	app.exec_()
 
 def preprocess():

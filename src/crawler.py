@@ -18,7 +18,7 @@ import time
 
 def crawl(sns_id, passwd, keyword, count=100, site=0):
 	start = time.time()
-	save_dir = 'crawl/{}_{}_{}_{}/'.format(time.strftime('%y%m%d_%H%M%S', time.localtime(time.time())), site, keyword, count)
+	save_dir = 'crawl/{}_{}/'.format(time.strftime('%y%m%d_%H%M%S', time.localtime(time.time())), keyword)
 	img_dir = save_dir + 'img/'
 	'''
 	keyword : 검색할 키워드
@@ -135,20 +135,24 @@ def crawl(sns_id, passwd, keyword, count=100, site=0):
 
 			elem.send_keys(Keys.PAGE_DOWN)
 
-
 		for i, img in enumerate(img_list):
 			filename = keyword + str(i+1) + '.jpg'
 
-			with urlopen(img) as f:
-				with open(img_dir + filename, 'wb') as h:
-					img = f.read()
-					h.write(img)
-			with open("{}url.csv".format(save_dir), 'a') as file:
-				file.write(img_url_list[i] + ',')
-				file.write(filename + '\n')
+			try:
+				with urlopen(img) as f:
+					with open(img_dir + filename, 'wb') as h:
+						img = f.read()
+						h.write(img)
+				with open("{}url.csv".format(save_dir), 'a') as file:
+					file.write(img_url_list[i] + '\n')
+					file.write(filename + ',')
+			except TimeoutError:
+				print("err - 127")
+				
 	elif site == 1:
-		baseUrl = 'https://www.pinterest.co.kr/login/'
-		driver.get(baseUrl)
+		baseUrl = 'https://www.pinterest.co.kr/'
+		loginUrl = baseUrl + 'login/'
+		driver.get(loginUrl)
 
 		driver.find_element_by_id('email').send_keys(sns_id)
 		driver.find_element_by_id('password').send_keys(passwd)
@@ -156,9 +160,10 @@ def crawl(sns_id, passwd, keyword, count=100, site=0):
 
 		time.sleep(1) # TODO 로딩 문제 해결되면 지우기..
 
-		plusurl = 'search/pins/?q={0}&rs=typed&term_meta[]={0}%7Ctyped'.format(keyword)
+		plusurl = 'search/pins/?q={0}'.format(keyword)
 
-		url = baseUrl + (plusurl)
+		url = baseUrl + plusurl
+		print(url)
 		driver.get(url)
 
 		page = driver.page_source
