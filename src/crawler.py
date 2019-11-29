@@ -144,8 +144,8 @@ def crawl(sns_id, passwd, keyword, count=100, site=0):
 						img = f.read()
 						h.write(img)
 				with open("{}url.csv".format(save_dir), 'a') as file:
-					file.write(img_url_list[i] + '\n')
-					file.write(filename + ',')
+					file.write(img_url_list[i] + ',')
+					file.write(filename + '\n')
 			except TimeoutError:
 				print("err - 127")
 				
