@@ -23,7 +23,7 @@ pip install pandas opencv-python matplotlib pillow selenium beautifulsoup4 konlp
 ```
 5. main.py 실행
 
-👥 구성원 맟 담당업무
+## 👥 구성원 맟 담당업무
 
 - 강대한 : 감성분석
 - 배준영 : SNS 스크래핑
